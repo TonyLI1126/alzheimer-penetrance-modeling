@@ -29,5 +29,5 @@ The analysis provides multi-level penetrance curves showing the cumulative risk 
 ---
 
 ## 📁 Repository Structure
-*   `Results & Report`: Full technical report with R code and interpretations.
+*   `/Results & Report`: Full technical report with R code and interpretations.
 *   `/docs`: Official project specifications and biological context.
