@@ -1,0 +1,1792 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="TL-SB">
+
+<title>Etude de cas PROJET 2025</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="Projet2025_TL_SB_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Projet2025_TL_SB_files/libs/quarto-html/quarto.js"></script>
+<script src="Projet2025_TL_SB_files/libs/quarto-html/popper.min.js"></script>
+<script src="Projet2025_TL_SB_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="Projet2025_TL_SB_files/libs/quarto-html/anchor.min.js"></script>
+<link href="Projet2025_TL_SB_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Projet2025_TL_SB_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="Projet2025_TL_SB_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="Projet2025_TL_SB_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="Projet2025_TL_SB_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Etude de cas PROJET 2025</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>TL-SB </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="projet-réalisé-par-tony-li-et-saïd-benaissa" class="level1">
+<h1>Projet réalisé par Tony LI et Saïd BENAISSA</h1>
+</section>
+<section id="projet-2025-etude-de-cas" class="level1">
+<h1>Projet 2025 Etude de cas</h1>
+<section id="partie-1-analyse-de-leffet-dun-variant-rare-ajusté-sur-leffet-dun-variant-fréquent" class="level2">
+<h2 class="anchored" data-anchor-id="partie-1-analyse-de-leffet-dun-variant-rare-ajusté-sur-leffet-dun-variant-fréquent">Partie 1: Analyse de l’effet d’un variant rare ajusté sur l’effet d’un variant fréquent</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>data_evaluation2025 <span class="ot">&lt;-</span> <span class="fu">read.delim</span>(<span class="st">"~/Master IMB Tony LI/etude de cas/data_evaluation2025.txt"</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>dataEC<span class="ot">=</span>data_evaluation2025</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(dataEC)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  famid indid patid matid index sex APOE SORL1 status age
+1     1     1     0     0     0   1   33     0      0  71
+2     1     2     0     0     0   2   33     0      0  78
+3     1     3     0     0     0   1   33     1      0  71
+4     1     4     0     0     0   2   23     0      0  55
+5     1     5     1     2     0   3   NA    NA      0  45
+6     1     6     1     2     0   1   NA    NA      0  59</code></pre>
+</div>
+</div>
+<p>La base de données data_evaluation2025 contient des données famiiliale simulées de 324 individus répartis dans 27 familles.<br>
+Elle décrit les informations généalogiques, cliniques et génétiques nécessaires pour estimer l’effet d’un variant rare dans le gène SORL1 sur le développement de la maladie d’Alzheimer, en tenant compte du statut génétique APOE.</p>
+</section>
+<section id="question-1-description" class="level2">
+<h2 class="anchored" data-anchor-id="question-1-description">Question 1 : Description</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(dataEC)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>'data.frame':   324 obs. of  10 variables:
+ $ famid : int  1 1 1 1 1 1 1 1 1 1 ...
+ $ indid : int  1 2 3 4 5 6 7 8 9 10 ...
+ $ patid : int  0 0 0 0 1 1 3 3 6 6 ...
+ $ matid : int  0 0 0 0 2 2 4 4 7 7 ...
+ $ index : int  0 0 0 0 0 0 0 0 0 1 ...
+ $ sex   : int  1 2 1 2 3 1 2 3 3 3 ...
+ $ APOE  : int  33 33 33 23 NA NA NA 32 32 32 ...
+ $ SORL1 : int  0 0 1 0 NA NA NA 0 0 1 ...
+ $ status: int  0 0 0 0 0 0 1 1 0 1 ...
+ $ age   : int  71 78 71 55 45 59 66 76 63 41 ...</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(<span class="fu">unique</span>(dataEC<span class="sc">$</span>famid))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 27</code></pre>
+</div>
+</div>
+<p>Il y a 27 familles uniques dans la base.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(dataEC<span class="sc">$</span>sex)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+  1   2   3 
+ 81  81 162 </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(dataEC<span class="sc">$</span>APOE)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+ 22  23  24  32  33  34  42  43  44 
+  4  24   6  28 126  41   9  66  14 </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(dataEC<span class="sc">$</span>SORL1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+  0   1  10 
+189  73  56 </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(dataEC<span class="sc">$</span>age)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  15.00   53.00   63.00   63.36   74.00  111.00 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sd</span>(dataEC<span class="sc">$</span>age)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 14.3707</code></pre>
+</div>
+</div>
+<p>Les individus sondés ont un âge compris entre 15 et 111 ans, pour une moyenne de 63 ans, de même pour la médiane.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(dataEC<span class="sc">$</span>age,</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>     <span class="at">breaks =</span> <span class="dv">30</span>,</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>     <span class="at">col =</span> <span class="st">"steelblue"</span>, </span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>     <span class="at">main =</span> <span class="st">"Distribution des âges"</span>,</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">"Âge"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Projet2025_TL_SB_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Nous pouvons voir qu’une très grande partie des individus ont entre 40 et 85 ans.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Répartition des statuts maladie</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(dataEC<span class="sc">$</span>status)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+  0   1 
+259  65 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">prop.table</span>(<span class="fu">table</span>(dataEC<span class="sc">$</span>status)) <span class="sc">*</span> <span class="dv">100</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+       0        1 
+79.93827 20.06173 </code></pre>
+</div>
+</div>
+<p>On a 259 individus non malades (80%) contre 65 malades (20%).</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sapply</span>(dataEC, <span class="cf">function</span>(x) <span class="fu">sum</span>(<span class="fu">is.na</span>(x)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> famid  indid  patid  matid  index    sex   APOE  SORL1 status    age 
+     0      0      0      0      0      0      6      6      0      0 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">unique</span>(dataEC<span class="sc">$</span>APOE)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] 33 23 NA 32 43 34 42 24 22 44</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">unique</span>(dataEC<span class="sc">$</span>SORL1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1]  0  1 NA 10</code></pre>
+</div>
+</div>
+<p>On a peut voir qu’il y a des valeurs manquantes pour APOE et SORL1.<br>
+On précisera ce que veut dire quand SORL1=10.</p>
+<p>On peut émettre plusieurs biais possibles :<br>
+- Biais de sélection :<br>
+Toutes les familles sont recrutées grâce à un cas index, pouvant être jeune et porteur du variant SORL1, ce qui pourrait provoquer une surestimation de la pénétrance<br>
+- Biais d’information :<br>
+Il a des génotypes manquants pour certains individus&lt;<br>
+- Codage étrange pour SORL1 :<br>
+On verra comment interpréter SORL1=10 et peut être le recoder<br>
+<br>
+</p>
+</section>
+<section id="question-1.b-arbres-des-familles-1-8-et-20" class="level2">
+<h2 class="anchored" data-anchor-id="question-1.b-arbres-des-familles-1-8-et-20">Question 1.b) : arbres des familles 1, 8 et 20</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(kinship2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Le chargement a nécessité le package : Matrix</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Le chargement a nécessité le package : quadprog</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co">#  Arbre généalogique : Famille 1</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>famille1 <span class="ot">=</span> <span class="fu">subset</span>(dataEC, famid <span class="sc">==</span> <span class="dv">1</span>)</span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>arbre1 <span class="ot">=</span> <span class="fu">pedigree</span>(<span class="at">id =</span> famille1<span class="sc">$</span>indid,</span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a>                   <span class="at">momid =</span> famille1<span class="sc">$</span>matid,</span>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a>                   <span class="at">dadid =</span> famille1<span class="sc">$</span>patid,</span>
+<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a>                   <span class="at">sex =</span> famille1<span class="sc">$</span>sex,</span>
+<span id="cb31-9"><a href="#cb31-9" aria-hidden="true" tabindex="-1"></a>                   <span class="at">affected =</span> famille1<span class="sc">$</span>status)</span>
+<span id="cb31-10"><a href="#cb31-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-11"><a href="#cb31-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-12"><a href="#cb31-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Affichage avec génotypes et âge</span></span>
+<span id="cb31-13"><a href="#cb31-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-14"><a href="#cb31-14" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(arbre1, </span>
+<span id="cb31-15"><a href="#cb31-15" aria-hidden="true" tabindex="-1"></a>     <span class="at">id =</span> <span class="fu">paste0</span>(famille1<span class="sc">$</span>indid, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>,</span>
+<span id="cb31-16"><a href="#cb31-16" aria-hidden="true" tabindex="-1"></a>                 famille1<span class="sc">$</span>APOE, <span class="st">"/"</span>, famille1<span class="sc">$</span>SORL1, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>,</span>
+<span id="cb31-17"><a href="#cb31-17" aria-hidden="true" tabindex="-1"></a>                 <span class="fu">round</span>(famille1<span class="sc">$</span>age), <span class="st">" ans"</span>))</span>
+<span id="cb31-18"><a href="#cb31-18" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span>(<span class="st">"Famille 1 — Génotypes APOE / SORL1 et âge"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Projet2025_TL_SB_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Dans cette famille, seuls quelques individus ont des génotypes manquants.<br>
+Les individus 5 et 6 sont les enfants d’un couple dont les deux parents ont pour génotype APOE = 33, ce qui permet de conclure que ces deux individus sont également APOE = 33.<br>
+Ils ne sont pas porteurs de la maladie et n’ont pas de mutation observée sur SORL1 → on peut compléter SORL1 = 00.</p>
+<p>L’individu 7, parent d’enfants porteurs de l’allèle 2, et en couple avec un individu APOE = 33, est vraisemblablement APOE = 23. (22 et 24 sont également possible mais moins probable)<br>
+De même, ses enfants étant porteurs d’un variant SORL1, on en déduit que l’individu 7 est aussi porteur, donc SORL1 = 1 (ou 10 qui est également possible)</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co"># FAMILLE 1</span></span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Individus 5 et 6 : enfants de deux parents APOE = 33 → donc APOE = 33</span></span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>dataEC[dataEC<span class="sc">$</span>famid <span class="sc">==</span> <span class="dv">1</span> <span class="sc">&amp;</span> dataEC<span class="sc">$</span>indid <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">5</span>, <span class="dv">6</span>), <span class="st">"APOE"</span>] <span class="ot">=</span> <span class="st">"33"</span></span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Ces mêmes individus sont non porteurs du variant, et parents = SORL1 = 0 → SORL1 = 0</span></span>
+<span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a>dataEC[dataEC<span class="sc">$</span>famid <span class="sc">==</span> <span class="dv">1</span> <span class="sc">&amp;</span> dataEC<span class="sc">$</span>indid <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">5</span>, <span class="dv">6</span>), <span class="st">"SORL1"</span>] <span class="ot">=</span> <span class="st">"0"</span></span>
+<span id="cb32-8"><a href="#cb32-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-9"><a href="#cb32-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Individu 7 : a des enfants APOE = 32 et en couple avec un APOE = 33 → doit avoir allèle 2 → APOE = 23</span></span>
+<span id="cb32-10"><a href="#cb32-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Enfants porteurs, partenaire SORL1 = 0 → il doit avoir transmis le variant → SORL1 = 1</span></span>
+<span id="cb32-11"><a href="#cb32-11" aria-hidden="true" tabindex="-1"></a>dataEC[dataEC<span class="sc">$</span>famid <span class="sc">==</span> <span class="dv">1</span> <span class="sc">&amp;</span> dataEC<span class="sc">$</span>indid <span class="sc">==</span> <span class="dv">7</span>, <span class="st">"APOE"</span>] <span class="ot">=</span> <span class="st">"23"</span></span>
+<span id="cb32-12"><a href="#cb32-12" aria-hidden="true" tabindex="-1"></a>dataEC[dataEC<span class="sc">$</span>famid <span class="sc">==</span> <span class="dv">1</span> <span class="sc">&amp;</span> dataEC<span class="sc">$</span>indid <span class="sc">==</span> <span class="dv">7</span>, <span class="st">"SORL1"</span>] <span class="ot">=</span> <span class="st">"1"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Arbre généalogique : Famille 8</span></span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>famille8 <span class="ot">=</span> <span class="fu">subset</span>(dataEC, famid <span class="sc">==</span> <span class="dv">8</span>)</span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>arbre8 <span class="ot">=</span> <span class="fu">pedigree</span>(<span class="at">id =</span> famille8<span class="sc">$</span>indid,</span>
+<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a>                   <span class="at">momid =</span> famille8<span class="sc">$</span>matid,</span>
+<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a>                   <span class="at">dadid =</span> famille8<span class="sc">$</span>patid,</span>
+<span id="cb33-8"><a href="#cb33-8" aria-hidden="true" tabindex="-1"></a>                   <span class="at">sex =</span> famille8<span class="sc">$</span>sex,</span>
+<span id="cb33-9"><a href="#cb33-9" aria-hidden="true" tabindex="-1"></a>                   <span class="at">affected =</span> famille8<span class="sc">$</span>status)</span>
+<span id="cb33-10"><a href="#cb33-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-11"><a href="#cb33-11" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(arbre8, </span>
+<span id="cb33-12"><a href="#cb33-12" aria-hidden="true" tabindex="-1"></a>     <span class="at">id =</span> <span class="fu">paste0</span>(famille8<span class="sc">$</span>indid, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>,</span>
+<span id="cb33-13"><a href="#cb33-13" aria-hidden="true" tabindex="-1"></a>                 famille8<span class="sc">$</span>APOE, <span class="st">"/"</span>, famille8<span class="sc">$</span>SORL1, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>,</span>
+<span id="cb33-14"><a href="#cb33-14" aria-hidden="true" tabindex="-1"></a>                 <span class="fu">round</span>(famille8<span class="sc">$</span>age), <span class="st">" ans"</span>))</span>
+<span id="cb33-15"><a href="#cb33-15" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span>(<span class="st">"Famille 8 — Génotypes APOE / SORL1 et âge"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Projet2025_TL_SB_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Les individus 6 et 7 n’ont pas de génotype APOE renseigné, mais :<br>
+Leurs parents ont les génotypes 43/33 pour l’un, et 24/33 pour l’autre.<br>
+Les enfants issus de leur union sont APOE = 42, 32, etc<br>
+On peut en déduire :<br>
+L’individu 6 a dû transmettre l’allèle 4 et a forcément un allèle 3 → APOE = 43<br>
+L’individu 7 a dû transmettre l’allèle 2 et a forcément un allèle 3 → APOE = 23</p>
+<p>Concernant SORL1, l’individu 7 est en couple avec un porteur du variant et a transmis ce variant à plusieurs enfants → il est SORL1 = 10 (probablement car il a transmis 1 a tout ses enfants)<br>
+L’individu 6 n’a pas de parents avec SORL=1 ou 10 → il est SORL1 = 0</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co">#FAMILLE 8</span></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Individu 6 : a transmis l’allèle 4 et a forcément un allèle 3, donc APOE = 43 / SORL1 = 0 (les 2 parents sont SORL1=0)</span></span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>dataEC[dataEC<span class="sc">$</span>famid <span class="sc">==</span> <span class="dv">8</span> <span class="sc">&amp;</span> dataEC<span class="sc">$</span>indid <span class="sc">==</span> <span class="dv">6</span>, <span class="st">"APOE"</span>] <span class="ot">=</span> <span class="st">"43"</span></span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>dataEC[dataEC<span class="sc">$</span>famid <span class="sc">==</span> <span class="dv">8</span> <span class="sc">&amp;</span> dataEC<span class="sc">$</span>indid <span class="sc">==</span> <span class="dv">6</span>, <span class="st">"SORL1"</span>] <span class="ot">=</span> <span class="st">"0"</span></span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Individu 7 : a transmis l’allèle 2 et a forcément un allèle 3, donc APOE = 23 / SORL1 = 1 (enfants porteurs,parent = 10, conjoint = 0)</span></span>
+<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a>dataEC[dataEC<span class="sc">$</span>famid <span class="sc">==</span> <span class="dv">8</span> <span class="sc">&amp;</span> dataEC<span class="sc">$</span>indid <span class="sc">==</span> <span class="dv">7</span>, <span class="st">"APOE"</span>] <span class="ot">=</span> <span class="st">"23"</span></span>
+<span id="cb34-9"><a href="#cb34-9" aria-hidden="true" tabindex="-1"></a>dataEC[dataEC<span class="sc">$</span>famid <span class="sc">==</span> <span class="dv">8</span> <span class="sc">&amp;</span> dataEC<span class="sc">$</span>indid <span class="sc">==</span> <span class="dv">7</span>, <span class="st">"SORL1"</span>] <span class="ot">=</span> <span class="st">"10"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Arbre généalogique : Famille 20</span></span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>famille20 <span class="ot">=</span> <span class="fu">subset</span>(dataEC, famid <span class="sc">==</span> <span class="dv">20</span>)</span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a>arbre20 <span class="ot">=</span> <span class="fu">pedigree</span>(<span class="at">id =</span> famille20<span class="sc">$</span>indid,</span>
+<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a>                    <span class="at">momid =</span> famille20<span class="sc">$</span>matid,</span>
+<span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a>                    <span class="at">dadid =</span> famille20<span class="sc">$</span>patid,</span>
+<span id="cb35-8"><a href="#cb35-8" aria-hidden="true" tabindex="-1"></a>                    <span class="at">sex =</span> famille20<span class="sc">$</span>sex,</span>
+<span id="cb35-9"><a href="#cb35-9" aria-hidden="true" tabindex="-1"></a>                    <span class="at">affected =</span> famille20<span class="sc">$</span>status)</span>
+<span id="cb35-10"><a href="#cb35-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-11"><a href="#cb35-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-12"><a href="#cb35-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-13"><a href="#cb35-13" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(arbre20, </span>
+<span id="cb35-14"><a href="#cb35-14" aria-hidden="true" tabindex="-1"></a>     <span class="at">id =</span> <span class="fu">paste0</span>(famille20<span class="sc">$</span>indid, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>,</span>
+<span id="cb35-15"><a href="#cb35-15" aria-hidden="true" tabindex="-1"></a>                 famille20<span class="sc">$</span>APOE, <span class="st">"/"</span>, famille20<span class="sc">$</span>SORL1, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>,</span>
+<span id="cb35-16"><a href="#cb35-16" aria-hidden="true" tabindex="-1"></a>                 <span class="fu">round</span>(famille20<span class="sc">$</span>age), <span class="st">" ans"</span>))</span>
+<span id="cb35-17"><a href="#cb35-17" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span>(<span class="st">"Famille 20 — Génotypes APOE / SORL1 et âge"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Projet2025_TL_SB_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>L’individu 6 n’a pas de génotype renseigné. Ses parents sont APOE = 23 et 43, donc ses combinaisons possibles sont : 24, 23, 33, ou 43.<br>
+Son partenaire (individu 7) est APOE = 33.<br>
+Les enfants issus de ce couple ont des génotypes 23 et 43,donc l’individu 7 a forcément apporté les allèles 3 et l’individu 6 doit avoir apporté les allèles 2 et 4 → APOE = 24.</p>
+<p>Concernant SORL1, l’individu 6 n’a pas de variant observé chez ses parents, il est forcément SORL=0.<br>
+</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="co">#FAMILLE 20</span></span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Individu 6 : son conjoint a transmis allèle 3 forcément, lui a transmis allèle 2 ou 4, donc APOE=24</span></span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a><span class="co">#SORL1 = 0 (les 2 parents sont SORL1=0)</span></span>
+<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a>dataEC[dataEC<span class="sc">$</span>famid <span class="sc">==</span> <span class="dv">20</span> <span class="sc">&amp;</span> dataEC<span class="sc">$</span>indid <span class="sc">==</span> <span class="dv">6</span>, <span class="st">"APOE"</span>] <span class="ot">=</span> <span class="st">"24"</span></span>
+<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a>dataEC[dataEC<span class="sc">$</span>famid <span class="sc">==</span> <span class="dv">20</span> <span class="sc">&amp;</span> dataEC<span class="sc">$</span>indid <span class="sc">==</span> <span class="dv">6</span>, <span class="st">"SORL1"</span>] <span class="ot">=</span> <span class="st">"0"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="question-1.c-recoder-les-variables" class="level2">
+<h2 class="anchored" data-anchor-id="question-1.c-recoder-les-variables">Question 1.c) : recoder les variables</h2>
+<p>On souhaite recoder les variables SORL1 (porteur de variant rare ou non) et APOE (nombre d’allèle ε4) pour les rendre utilisable dans les modèles de survie.</p>
+<section id="recodage-du-nombre-dallèle-ε4-apoe" class="level3">
+<h3 class="anchored" data-anchor-id="recodage-du-nombre-dallèle-ε4-apoe">Recodage du nombre d’allèle <strong>ε4</strong> (APOE)</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Variable APOE </span></span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>dataEC<span class="sc">$</span>APOE.recode <span class="ot">=</span>  <span class="fu">ifelse</span>(dataEC<span class="sc">$</span>APOE <span class="sc">==</span> <span class="st">"32"</span>, <span class="st">"23"</span>, </span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>                              <span class="fu">ifelse</span>(dataEC<span class="sc">$</span>APOE <span class="sc">==</span> <span class="st">"42"</span>, <span class="st">"24"</span>, </span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a>                                     <span class="fu">ifelse</span>(dataEC<span class="sc">$</span>APOE <span class="sc">==</span> <span class="st">"43"</span>, <span class="st">"34"</span>, dataEC<span class="sc">$</span>APOE)))</span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(dataEC<span class="sc">$</span>APOE.recode, dataEC<span class="sc">$</span>APOE)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>    
+      22  23  24  32  33  34  42  43  44
+  22   4   0   0   0   0   0   0   0   0
+  23   0  26   0  28   0   0   0   0   0
+  24   0   0   7   0   0   0   9   0   0
+  33   0   0   0   0 128   0   0   0   0
+  34   0   0   0   0   0  41   0  67   0
+  44   0   0   0   0   0   0   0   0  14</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(dataEC<span class="sc">$</span>APOE.recode)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+ 22  23  24  33  34  44 
+  4  54  16 128 108  14 </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Recodage du nombre d'allèles 4 pour la variable APOE</span></span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>dataEC<span class="sc">$</span>APOE.nb4 <span class="ot">=</span>  <span class="fu">ifelse</span>(dataEC<span class="sc">$</span>APOE.recode <span class="sc">==</span> <span class="st">"44"</span>, <span class="dv">2</span>,  <span class="co"># 2 allèles 4 (homozygote)</span></span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a>                           <span class="fu">ifelse</span>(dataEC<span class="sc">$</span>APOE.recode <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"24"</span>, <span class="st">"34"</span>), <span class="dv">1</span>,  <span class="co"># 1 allèle 4 (hétérozygote)</span></span>
+<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a>                                  <span class="dv">0</span>))  <span class="co"># 0 allèle 4 (aucun)</span></span>
+<span id="cb41-5"><a href="#cb41-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-6"><a href="#cb41-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Vérification du recodage</span></span>
+<span id="cb41-7"><a href="#cb41-7" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(dataEC<span class="sc">$</span>APOE.nb4)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+  0   1   2 
+186 124  14 </code></pre>
+</div>
+</div>
+</section>
+<section id="recodage-de-sorl1-porteur-ou-non-binaire" class="level3">
+<h3 class="anchored" data-anchor-id="recodage-de-sorl1-porteur-ou-non-binaire">Recodage de SORL1 (porteur ou non, =&gt; binaire)</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>dataEC<span class="sc">$</span>SORL1.recode<span class="ot">=</span><span class="fu">ifelse</span>(dataEC<span class="sc">$</span>SORL1<span class="sc">==</span><span class="st">"0"</span>,<span class="dv">0</span>,<span class="dv">1</span>)</span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(dataEC<span class="sc">$</span>SORL1.recode,dataEC<span class="sc">$</span>SORL1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   
+      0   1  10
+  0 193   0   0
+  1   0  74  57</code></pre>
+</div>
+</div>
+<p>Maintenant la variable SORL1_binaire contient :<br>
+- 1 si l’indiv est porteur de au moins 1 variant<br>
+- 0 si l’indiv est non porteur<br>
+- NA si le génotype est inconnu</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(dataEC<span class="sc">$</span>APOE.nb4)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+  0   1   2 
+186 124  14 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(dataEC<span class="sc">$</span>SORL1.recode)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+  0   1 
+193 131 </code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="question-2.a-pourquoi-estimer-beta-et-pas-lambda_nc" class="level2">
+<h2 class="anchored" data-anchor-id="question-2.a-pourquoi-estimer-beta-et-pas-lambda_nc">Question 2.a) Pourquoi estimer <span class="math inline">\(\beta\)</span> et pas <span class="math inline">\(\lambda_{nc}\)</span></h2>
+<p>La cohorte est seulement constituée de familles recrutées à partir d’un cas index atteint jeune, et porteur d’un variant SORL1.<br>
+Cela a introduit des biais de sélection (les âges de survenue de la maladie observés ne représentent pas ceux de la population générale).<br>
+Donc on ne peut pas estimer correctement <span class="math inline">\(\lambda_ {nc}\)</span> à partir de ces données.<br>
+On peut cependant estimer <span class="math inline">\(\beta\)</span> directement à partir de la cohorte familiale car <span class="math inline">\(\beta\)</span> est spécifique à l’effet du variant SORL1, alors que le <span class="math inline">\(\lambda_{nc}\)</span> est le risque de base qui peut être influencé par les biais.</p>
+</section>
+<section id="question-2.b-estimation-de-beta" class="level2">
+<h2 class="anchored" data-anchor-id="question-2.b-estimation-de-beta">Question 2.b) Estimation de beta</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Charger les paramètres nécessaires</span></span>
+<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(<span class="st">"APOE.mu.RData"</span>)</span>
+<span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(<span class="st">"APOE.sigma.RData"</span>)</span>
+<span id="cb49-4"><a href="#cb49-4" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"APOE.R"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Numérateur : nombre de malades parmi les porteurs de SORL1</span></span>
+<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a>num <span class="ot">=</span> <span class="fu">sum</span>(dataEC[dataEC<span class="sc">$</span>SORL1.recode<span class="sc">==</span><span class="dv">1</span>,]<span class="sc">$</span>status,<span class="at">na.rm=</span><span class="cn">TRUE</span>)</span>
+<span id="cb50-3"><a href="#cb50-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb50-4"><a href="#cb50-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Calcul du risque cumulé non causal (fonction fournie) pour chaque individu</span></span>
+<span id="cb50-5"><a href="#cb50-5" aria-hidden="true" tabindex="-1"></a>dataEC<span class="sc">$</span>Lnc <span class="ot">=</span> <span class="fu">mapply</span>(Cumullambda.APOE,</span>
+<span id="cb50-6"><a href="#cb50-6" aria-hidden="true" tabindex="-1"></a>                     <span class="at">nb4 =</span> dataEC<span class="sc">$</span>APOE.nb4,</span>
+<span id="cb50-7"><a href="#cb50-7" aria-hidden="true" tabindex="-1"></a>                     <span class="at">t   =</span> dataEC<span class="sc">$</span>age,</span>
+<span id="cb50-8"><a href="#cb50-8" aria-hidden="true" tabindex="-1"></a>                     <span class="at">u   =</span> <span class="dv">0</span>)</span>
+<span id="cb50-9"><a href="#cb50-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb50-10"><a href="#cb50-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Dénominateur : somme des risques chez les porteurs de SORL1</span></span>
+<span id="cb50-11"><a href="#cb50-11" aria-hidden="true" tabindex="-1"></a>denom <span class="ot">=</span> <span class="fu">sum</span>(dataEC[dataEC<span class="sc">$</span>SORL1.recode <span class="sc">==</span> <span class="dv">1</span>,]<span class="sc">$</span>Lnc, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb50-12"><a href="#cb50-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb50-13"><a href="#cb50-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Estimation de β</span></span>
+<span id="cb50-14"><a href="#cb50-14" aria-hidden="true" tabindex="-1"></a>beta <span class="ot">=</span> <span class="fu">log</span>(num <span class="sc">/</span> denom)</span>
+<span id="cb50-15"><a href="#cb50-15" aria-hidden="true" tabindex="-1"></a>beta</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 3.407223</code></pre>
+</div>
+</div>
+<p>On va estimer <span class="math inline">\(\beta\)</span> basée sur une vraisemblance conditionnelle comme dans le TP avec :<br>
+- en numérateur : le nombre de porteurs SORL1 ayant développé la maladie<br>
+- en dénominateur : la somme des risques cumulés non causals, calculés à l’âge observé pour chaque porteur, via une fonction Cumullambda.APOE().</p>
+<p>Interprétation :<br>
+La valeur estimée de <span class="math inline">\(\hat{\beta} \approx 3.41\)</span> indique que le risque de développer la maladie est multiplié par <span class="math inline">\(e^{3.41} \approx 30\)</span> chez les porteurs du variant SORL1 a statut APOE égal.<br>
+Cette estimation est cohérente avec l’effet attendu d’un variant rare à fort effet.</p>
+</section>
+<section id="question-2.c-et-d-courbe-de-pénétrance-avec-ic" class="level2">
+<h2 class="anchored" data-anchor-id="question-2.c-et-d-courbe-de-pénétrance-avec-ic">Question 2.c) et d) Courbe de pénétrance avec IC</h2>
+<p>On veut tracer les courbes de pénétrance : la probabilité cumulée de développer la maladie avant un âge donnée, selon :<br>
+- le nombre d’allèles ε4 (APOE) : 0, 1 ou 2<br>
+- le statut SORL1 : porteur du variant ou non</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a>age <span class="ot">=</span> <span class="dv">40</span><span class="sc">:</span><span class="dv">100</span></span>
+<span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a>nb_iteration <span class="ot">=</span> <span class="dv">100</span>  <span class="co"># Nombre d'itérations pour le bootstrap</span></span>
+<span id="cb52-3"><a href="#cb52-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-4"><a href="#cb52-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Initialisation des matrices de pénétrance pour chaque type d'allèle</span></span>
+<span id="cb52-5"><a href="#cb52-5" aria-hidden="true" tabindex="-1"></a>matrice_penetrance0 <span class="ot">=</span> <span class="fu">matrix</span>(<span class="cn">NA</span>, <span class="at">nrow =</span> <span class="fu">length</span>(age), <span class="at">ncol =</span> nb_iteration)</span>
+<span id="cb52-6"><a href="#cb52-6" aria-hidden="true" tabindex="-1"></a>matrice_penetrance1 <span class="ot">=</span> <span class="fu">matrix</span>(<span class="cn">NA</span>, <span class="at">nrow =</span> <span class="fu">length</span>(age), <span class="at">ncol =</span> nb_iteration)</span>
+<span id="cb52-7"><a href="#cb52-7" aria-hidden="true" tabindex="-1"></a>matrice_penetrance2 <span class="ot">=</span> <span class="fu">matrix</span>(<span class="cn">NA</span>, <span class="at">nrow =</span> <span class="fu">length</span>(age), <span class="at">ncol =</span> nb_iteration)</span>
+<span id="cb52-8"><a href="#cb52-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-9"><a href="#cb52-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Bootstrap: simulation avec échantillons de familles</span></span>
+<span id="cb52-10"><a href="#cb52-10" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (k <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>nb_iteration) {</span>
+<span id="cb52-11"><a href="#cb52-11" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Création d'un échantillon bootstrap</span></span>
+<span id="cb52-12"><a href="#cb52-12" aria-hidden="true" tabindex="-1"></a>  families.boot_k <span class="ot">=</span> <span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">27</span>, <span class="dv">27</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>)  <span class="co"># Utilise 27 familles dans notre base</span></span>
+<span id="cb52-13"><a href="#cb52-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-14"><a href="#cb52-14" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Identifiants uniques</span></span>
+<span id="cb52-15"><a href="#cb52-15" aria-hidden="true" tabindex="-1"></a>  unique_indid.boot_k <span class="ot">=</span> <span class="fu">paste</span>(families.boot_k, dataEC<span class="sc">$</span>indid, <span class="at">sep =</span> <span class="st">""</span>)</span>
+<span id="cb52-16"><a href="#cb52-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-17"><a href="#cb52-17" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Matrices de pénétrance pour chaque échantillon bootstrap</span></span>
+<span id="cb52-18"><a href="#cb52-18" aria-hidden="true" tabindex="-1"></a>  dataEC.boot_k <span class="ot">=</span> dataEC[<span class="fu">match</span>(unique_indid.boot_k, dataEC<span class="sc">$</span>unique_indid), ]</span>
+<span id="cb52-19"><a href="#cb52-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-20"><a href="#cb52-20" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Générer les u aléatoires pour les paramètres</span></span>
+<span id="cb52-21"><a href="#cb52-21" aria-hidden="true" tabindex="-1"></a>  u_k <span class="ot">=</span> <span class="fu">rnorm</span>(<span class="dv">1</span>, <span class="at">mean =</span> <span class="dv">0</span>, <span class="at">sd =</span> <span class="dv">1</span>)</span>
+<span id="cb52-22"><a href="#cb52-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-23"><a href="#cb52-23" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Calcul des courbes de pénétrance pour chaque nb4 (0, 1, 2 allèles)</span></span>
+<span id="cb52-24"><a href="#cb52-24" aria-hidden="true" tabindex="-1"></a>  L0 <span class="ot">=</span> <span class="fu">mapply</span>(Cumullambda.APOE, <span class="at">nb4 =</span> <span class="dv">0</span>, <span class="at">t =</span> age, <span class="at">u =</span> u_k)</span>
+<span id="cb52-25"><a href="#cb52-25" aria-hidden="true" tabindex="-1"></a>  L1 <span class="ot">=</span> <span class="fu">mapply</span>(Cumullambda.APOE, <span class="at">nb4 =</span> <span class="dv">1</span>, <span class="at">t =</span> age, <span class="at">u =</span> u_k)</span>
+<span id="cb52-26"><a href="#cb52-26" aria-hidden="true" tabindex="-1"></a>  L2 <span class="ot">=</span> <span class="fu">mapply</span>(Cumullambda.APOE, <span class="at">nb4 =</span> <span class="dv">2</span>, <span class="at">t =</span> age, <span class="at">u =</span> u_k)</span>
+<span id="cb52-27"><a href="#cb52-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-28"><a href="#cb52-28" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Calcul des courbes de pénétrance pour chaque échantillon</span></span>
+<span id="cb52-29"><a href="#cb52-29" aria-hidden="true" tabindex="-1"></a>  matrice_penetrance0[, k] <span class="ot">=</span> <span class="dv">1</span> <span class="sc">-</span> <span class="fu">exp</span>(<span class="sc">-</span>L0 <span class="sc">*</span> <span class="fu">exp</span>(beta))</span>
+<span id="cb52-30"><a href="#cb52-30" aria-hidden="true" tabindex="-1"></a>  matrice_penetrance1[, k] <span class="ot">=</span> <span class="dv">1</span> <span class="sc">-</span> <span class="fu">exp</span>(<span class="sc">-</span>L1 <span class="sc">*</span> <span class="fu">exp</span>(beta))</span>
+<span id="cb52-31"><a href="#cb52-31" aria-hidden="true" tabindex="-1"></a>  matrice_penetrance2[, k] <span class="ot">=</span> <span class="dv">1</span> <span class="sc">-</span> <span class="fu">exp</span>(<span class="sc">-</span>L2 <span class="sc">*</span> <span class="fu">exp</span>(beta))</span>
+<span id="cb52-32"><a href="#cb52-32" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb52-33"><a href="#cb52-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-34"><a href="#cb52-34" aria-hidden="true" tabindex="-1"></a><span class="co"># Calcul des intervalles de confiance</span></span>
+<span id="cb52-35"><a href="#cb52-35" aria-hidden="true" tabindex="-1"></a>IC_borne_inf_0 <span class="ot">=</span> <span class="fu">apply</span>(matrice_penetrance0, <span class="dv">1</span>, <span class="cf">function</span>(x){<span class="fu">quantile</span>(x, <span class="fl">0.025</span>)})</span>
+<span id="cb52-36"><a href="#cb52-36" aria-hidden="true" tabindex="-1"></a>IC_borne_sup_0 <span class="ot">=</span> <span class="fu">apply</span>(matrice_penetrance0, <span class="dv">1</span>, <span class="cf">function</span>(x){<span class="fu">quantile</span>(x, <span class="fl">0.975</span>)})</span>
+<span id="cb52-37"><a href="#cb52-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-38"><a href="#cb52-38" aria-hidden="true" tabindex="-1"></a>IC_borne_inf_1 <span class="ot">=</span> <span class="fu">apply</span>(matrice_penetrance1, <span class="dv">1</span>, <span class="cf">function</span>(x){<span class="fu">quantile</span>(x, <span class="fl">0.025</span>)})</span>
+<span id="cb52-39"><a href="#cb52-39" aria-hidden="true" tabindex="-1"></a>IC_borne_sup_1 <span class="ot">=</span> <span class="fu">apply</span>(matrice_penetrance1, <span class="dv">1</span>, <span class="cf">function</span>(x){<span class="fu">quantile</span>(x, <span class="fl">0.975</span>)})</span>
+<span id="cb52-40"><a href="#cb52-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-41"><a href="#cb52-41" aria-hidden="true" tabindex="-1"></a>IC_borne_inf_2 <span class="ot">=</span> <span class="fu">apply</span>(matrice_penetrance2, <span class="dv">1</span>, <span class="cf">function</span>(x){<span class="fu">quantile</span>(x, <span class="fl">0.025</span>)})</span>
+<span id="cb52-42"><a href="#cb52-42" aria-hidden="true" tabindex="-1"></a>IC_borne_sup_2 <span class="ot">=</span> <span class="fu">apply</span>(matrice_penetrance2, <span class="dv">1</span>, <span class="cf">function</span>(x){<span class="fu">quantile</span>(x, <span class="fl">0.975</span>)})</span>
+<span id="cb52-43"><a href="#cb52-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-44"><a href="#cb52-44" aria-hidden="true" tabindex="-1"></a><span class="co"># Tracer les courbes et les intervalles de confiance</span></span>
+<span id="cb52-45"><a href="#cb52-45" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(age, matrice_penetrance0[,<span class="dv">1</span>], <span class="at">col =</span> <span class="st">"blue"</span>, <span class="at">lwd =</span> <span class="dv">2</span>, <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>), <span class="at">type =</span> <span class="st">"l"</span>, </span>
+<span id="cb52-46"><a href="#cb52-46" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">"Âge"</span>, <span class="at">ylab =</span> <span class="st">"Pénétrance"</span>, <span class="at">main =</span> <span class="st">"Courbe de pénétrance chez les porteurs d'un variant SORL1"</span>)</span>
+<span id="cb52-47"><a href="#cb52-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-48"><a href="#cb52-48" aria-hidden="true" tabindex="-1"></a><span class="co"># Courbe pour les porteurs d'un allèle 4</span></span>
+<span id="cb52-49"><a href="#cb52-49" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(age, <span class="fu">apply</span>(matrice_penetrance1, <span class="dv">1</span>, mean), <span class="at">col =</span> <span class="st">"orange"</span>, <span class="at">lwd =</span> <span class="dv">2</span>)</span>
+<span id="cb52-50"><a href="#cb52-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-51"><a href="#cb52-51" aria-hidden="true" tabindex="-1"></a><span class="co"># Courbe pour les porteurs de 2 allèles 4²</span></span>
+<span id="cb52-52"><a href="#cb52-52" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(age, <span class="fu">apply</span>(matrice_penetrance2, <span class="dv">1</span>, mean), <span class="at">col =</span> <span class="st">"red"</span>, <span class="at">lwd =</span> <span class="dv">2</span>)</span>
+<span id="cb52-53"><a href="#cb52-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-54"><a href="#cb52-54" aria-hidden="true" tabindex="-1"></a><span class="co"># Tracer les intervalles de confiance pour chaque courbe</span></span>
+<span id="cb52-55"><a href="#cb52-55" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(age, IC_borne_inf_0, <span class="at">col =</span> <span class="st">"blue"</span>, <span class="at">lty =</span> <span class="dv">2</span>)</span>
+<span id="cb52-56"><a href="#cb52-56" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(age, IC_borne_sup_0, <span class="at">col =</span> <span class="st">"blue"</span>, <span class="at">lty =</span> <span class="dv">2</span>)</span>
+<span id="cb52-57"><a href="#cb52-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-58"><a href="#cb52-58" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(age, IC_borne_inf_1, <span class="at">col =</span> <span class="st">"orange"</span>, <span class="at">lty =</span> <span class="dv">2</span>)</span>
+<span id="cb52-59"><a href="#cb52-59" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(age, IC_borne_sup_1, <span class="at">col =</span> <span class="st">"orange"</span>, <span class="at">lty =</span> <span class="dv">2</span>)</span>
+<span id="cb52-60"><a href="#cb52-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-61"><a href="#cb52-61" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(age, IC_borne_inf_2, <span class="at">col =</span> <span class="st">"red"</span>, <span class="at">lty =</span> <span class="dv">2</span>)</span>
+<span id="cb52-62"><a href="#cb52-62" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(age, IC_borne_sup_2, <span class="at">col =</span> <span class="st">"red"</span>, <span class="at">lty =</span> <span class="dv">2</span>)</span>
+<span id="cb52-63"><a href="#cb52-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-64"><a href="#cb52-64" aria-hidden="true" tabindex="-1"></a><span class="co"># Légende</span></span>
+<span id="cb52-65"><a href="#cb52-65" aria-hidden="true" tabindex="-1"></a><span class="fu">legend</span>(<span class="st">"topleft"</span>, <span class="at">fill =</span> <span class="fu">c</span>(<span class="st">"red"</span>, <span class="st">"orange"</span>, <span class="st">"blue"</span>), <span class="at">border =</span> <span class="cn">NA</span>, <span class="at">lty =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">2</span>, <span class="dv">2</span>), </span>
+<span id="cb52-66"><a href="#cb52-66" aria-hidden="true" tabindex="-1"></a>       <span class="at">legend =</span> <span class="fu">c</span>(<span class="st">"2 allèles 4"</span>, <span class="st">"1 allèle 4"</span>, <span class="st">"0 allèle 4"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Projet2025_TL_SB_files/figure-html/unnamed-chunk-24-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a>age <span class="ot">=</span> <span class="dv">40</span><span class="sc">:</span><span class="dv">100</span></span>
+<span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a>nb_iteration <span class="ot">=</span> <span class="dv">100</span> <span class="co"># Nombre d'itérations pour le bootstrap</span></span>
+<span id="cb53-3"><a href="#cb53-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-4"><a href="#cb53-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Initialisation des matrices de pénétrance pour chaque type d'allèle</span></span>
+<span id="cb53-5"><a href="#cb53-5" aria-hidden="true" tabindex="-1"></a>matrice_penetrance0sans <span class="ot">=</span> <span class="fu">matrix</span>(<span class="cn">NA</span>, <span class="at">nrow =</span> <span class="fu">length</span>(age), <span class="at">ncol =</span> nb_iteration)</span>
+<span id="cb53-6"><a href="#cb53-6" aria-hidden="true" tabindex="-1"></a>matrice_penetrance1sans <span class="ot">=</span> <span class="fu">matrix</span>(<span class="cn">NA</span>, <span class="at">nrow =</span> <span class="fu">length</span>(age), <span class="at">ncol =</span> nb_iteration)</span>
+<span id="cb53-7"><a href="#cb53-7" aria-hidden="true" tabindex="-1"></a>matrice_penetrance2sans <span class="ot">=</span> <span class="fu">matrix</span>(<span class="cn">NA</span>, <span class="at">nrow =</span> <span class="fu">length</span>(age), <span class="at">ncol =</span> nb_iteration)</span>
+<span id="cb53-8"><a href="#cb53-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-9"><a href="#cb53-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Bootstrap: simulation avec échantillons de familles</span></span>
+<span id="cb53-10"><a href="#cb53-10" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (k <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>nb_iteration) {</span>
+<span id="cb53-11"><a href="#cb53-11" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Création d'un échantillon bootstrap</span></span>
+<span id="cb53-12"><a href="#cb53-12" aria-hidden="true" tabindex="-1"></a>  families.boot_k <span class="ot">=</span> <span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">27</span>, <span class="dv">27</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>)  <span class="co"># Utilise 27 familles dans notre base</span></span>
+<span id="cb53-13"><a href="#cb53-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-14"><a href="#cb53-14" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Identifiants uniques</span></span>
+<span id="cb53-15"><a href="#cb53-15" aria-hidden="true" tabindex="-1"></a>  unique_indid.boot_k <span class="ot">=</span> <span class="fu">paste</span>(families.boot_k, dataEC<span class="sc">$</span>indid, <span class="at">sep =</span> <span class="st">""</span>)</span>
+<span id="cb53-16"><a href="#cb53-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-17"><a href="#cb53-17" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Matrices de pénétrance pour chaque échantillon bootstrap</span></span>
+<span id="cb53-18"><a href="#cb53-18" aria-hidden="true" tabindex="-1"></a>  dataEC.boot_k <span class="ot">=</span> dataEC[<span class="fu">match</span>(unique_indid.boot_k, dataEC<span class="sc">$</span>unique_indid), ]</span>
+<span id="cb53-19"><a href="#cb53-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-20"><a href="#cb53-20" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Générer les u aléatoires pour les paramètres</span></span>
+<span id="cb53-21"><a href="#cb53-21" aria-hidden="true" tabindex="-1"></a>  u_k <span class="ot">=</span> <span class="fu">rnorm</span>(<span class="dv">1</span>, <span class="at">mean =</span> <span class="dv">0</span>, <span class="at">sd =</span> <span class="dv">1</span>)</span>
+<span id="cb53-22"><a href="#cb53-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-23"><a href="#cb53-23" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Calcul des courbes de pénétrance pour chaque nb4 (0, 1, 2 allèles)</span></span>
+<span id="cb53-24"><a href="#cb53-24" aria-hidden="true" tabindex="-1"></a>  L0sans <span class="ot">=</span> <span class="fu">mapply</span>(Cumullambda.APOE, <span class="at">nb4 =</span> <span class="dv">0</span>, <span class="at">t =</span> age, <span class="at">u =</span> u_k) <span class="co"># calcul du risque cumulé pour les porteurs d'aucun allèle e4 sur APOE</span></span>
+<span id="cb53-25"><a href="#cb53-25" aria-hidden="true" tabindex="-1"></a>  L1sans <span class="ot">=</span> <span class="fu">mapply</span>(Cumullambda.APOE, <span class="at">nb4 =</span> <span class="dv">1</span>, <span class="at">t =</span> age, <span class="at">u =</span> u_k) <span class="co"># calcul du risque cumulé pour les porteurs d'un allèle e4 sur APOE</span></span>
+<span id="cb53-26"><a href="#cb53-26" aria-hidden="true" tabindex="-1"></a>  L2sans <span class="ot">=</span> <span class="fu">mapply</span>(Cumullambda.APOE, <span class="at">nb4 =</span> <span class="dv">2</span>, <span class="at">t =</span> age, <span class="at">u =</span> u_k) <span class="co"># calcul du risque cumulé pour les porteurs de 2 allèles e4 sur APOE</span></span>
+<span id="cb53-27"><a href="#cb53-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-28"><a href="#cb53-28" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Calcul des courbes de pénétrance pour chaque échantillon</span></span>
+<span id="cb53-29"><a href="#cb53-29" aria-hidden="true" tabindex="-1"></a>  matrice_penetrance0sans[, k] <span class="ot">=</span> <span class="dv">1</span> <span class="sc">-</span> <span class="fu">exp</span>(<span class="sc">-</span>L0sans)</span>
+<span id="cb53-30"><a href="#cb53-30" aria-hidden="true" tabindex="-1"></a>  matrice_penetrance1sans[, k] <span class="ot">=</span> <span class="dv">1</span> <span class="sc">-</span> <span class="fu">exp</span>(<span class="sc">-</span>L1sans)</span>
+<span id="cb53-31"><a href="#cb53-31" aria-hidden="true" tabindex="-1"></a>  matrice_penetrance2sans[, k] <span class="ot">=</span> <span class="dv">1</span> <span class="sc">-</span> <span class="fu">exp</span>(<span class="sc">-</span>L2sans)</span>
+<span id="cb53-32"><a href="#cb53-32" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb53-33"><a href="#cb53-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-34"><a href="#cb53-34" aria-hidden="true" tabindex="-1"></a><span class="co"># Calcul des intervalles de confiance</span></span>
+<span id="cb53-35"><a href="#cb53-35" aria-hidden="true" tabindex="-1"></a>IC_borne_inf_0sans <span class="ot">=</span> <span class="fu">apply</span>(matrice_penetrance0sans, <span class="dv">1</span>, <span class="cf">function</span>(x){<span class="fu">quantile</span>(x, <span class="fl">0.025</span>)})</span>
+<span id="cb53-36"><a href="#cb53-36" aria-hidden="true" tabindex="-1"></a>IC_borne_sup_0sans <span class="ot">=</span> <span class="fu">apply</span>(matrice_penetrance0sans, <span class="dv">1</span>, <span class="cf">function</span>(x){<span class="fu">quantile</span>(x, <span class="fl">0.975</span>)})</span>
+<span id="cb53-37"><a href="#cb53-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-38"><a href="#cb53-38" aria-hidden="true" tabindex="-1"></a>IC_borne_inf_1sans <span class="ot">=</span> <span class="fu">apply</span>(matrice_penetrance1sans, <span class="dv">1</span>, <span class="cf">function</span>(x){<span class="fu">quantile</span>(x, <span class="fl">0.025</span>)})</span>
+<span id="cb53-39"><a href="#cb53-39" aria-hidden="true" tabindex="-1"></a>IC_borne_sup_1sans <span class="ot">=</span> <span class="fu">apply</span>(matrice_penetrance1sans, <span class="dv">1</span>, <span class="cf">function</span>(x){<span class="fu">quantile</span>(x, <span class="fl">0.975</span>)})</span>
+<span id="cb53-40"><a href="#cb53-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-41"><a href="#cb53-41" aria-hidden="true" tabindex="-1"></a>IC_borne_inf_2sans <span class="ot">=</span> <span class="fu">apply</span>(matrice_penetrance2sans, <span class="dv">1</span>, <span class="cf">function</span>(x){<span class="fu">quantile</span>(x, <span class="fl">0.025</span>)})</span>
+<span id="cb53-42"><a href="#cb53-42" aria-hidden="true" tabindex="-1"></a>IC_borne_sup_2sans <span class="ot">=</span> <span class="fu">apply</span>(matrice_penetrance2sans, <span class="dv">1</span>, <span class="cf">function</span>(x){<span class="fu">quantile</span>(x, <span class="fl">0.975</span>)})</span>
+<span id="cb53-43"><a href="#cb53-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-44"><a href="#cb53-44" aria-hidden="true" tabindex="-1"></a><span class="co"># Tracer les courbes et les intervalles de confiance</span></span>
+<span id="cb53-45"><a href="#cb53-45" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(age, matrice_penetrance0sans[,<span class="dv">1</span>], <span class="at">col =</span> <span class="st">"blue"</span>, <span class="at">lwd =</span> <span class="dv">2</span>, <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>), <span class="at">type =</span> <span class="st">"l"</span>, </span>
+<span id="cb53-46"><a href="#cb53-46" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">"Âge"</span>, <span class="at">ylab =</span> <span class="st">"Pénétrance"</span>, <span class="at">main =</span> <span class="st">"Courbe de pénétrance chez les non porteurs d'un variant SORL1"</span>)</span>
+<span id="cb53-47"><a href="#cb53-47" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(age, <span class="fu">apply</span>(matrice_penetrance1sans, <span class="dv">1</span>, mean), <span class="at">col =</span> <span class="st">"orange"</span>, <span class="at">lwd =</span> <span class="dv">2</span>)</span>
+<span id="cb53-48"><a href="#cb53-48" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(age, <span class="fu">apply</span>(matrice_penetrance2sans, <span class="dv">1</span>, mean), <span class="at">col =</span> <span class="st">"red"</span>, <span class="at">lwd =</span> <span class="dv">2</span>)</span>
+<span id="cb53-49"><a href="#cb53-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-50"><a href="#cb53-50" aria-hidden="true" tabindex="-1"></a><span class="co"># Tracer les intervalles de confiance pour chaque courbe</span></span>
+<span id="cb53-51"><a href="#cb53-51" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(age, IC_borne_inf_0sans, <span class="at">col =</span> <span class="st">"blue"</span>, <span class="at">lty =</span> <span class="dv">2</span>)</span>
+<span id="cb53-52"><a href="#cb53-52" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(age, IC_borne_sup_0sans, <span class="at">col =</span> <span class="st">"blue"</span>, <span class="at">lty =</span> <span class="dv">2</span>)</span>
+<span id="cb53-53"><a href="#cb53-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-54"><a href="#cb53-54" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(age, IC_borne_inf_1sans, <span class="at">col =</span> <span class="st">"orange"</span>, <span class="at">lty =</span> <span class="dv">2</span>)</span>
+<span id="cb53-55"><a href="#cb53-55" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(age, IC_borne_sup_1sans, <span class="at">col =</span> <span class="st">"orange"</span>, <span class="at">lty =</span> <span class="dv">2</span>)</span>
+<span id="cb53-56"><a href="#cb53-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-57"><a href="#cb53-57" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(age, IC_borne_inf_2sans, <span class="at">col =</span> <span class="st">"red"</span>, <span class="at">lty =</span> <span class="dv">2</span>)</span>
+<span id="cb53-58"><a href="#cb53-58" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(age, IC_borne_sup_2sans, <span class="at">col =</span> <span class="st">"red"</span>, <span class="at">lty =</span> <span class="dv">2</span>)</span>
+<span id="cb53-59"><a href="#cb53-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-60"><a href="#cb53-60" aria-hidden="true" tabindex="-1"></a><span class="co"># Légende</span></span>
+<span id="cb53-61"><a href="#cb53-61" aria-hidden="true" tabindex="-1"></a><span class="fu">legend</span>(<span class="st">"topleft"</span>, <span class="at">fill =</span> <span class="fu">c</span>(<span class="st">"red"</span>, <span class="st">"orange"</span>, <span class="st">"blue"</span>), <span class="at">border =</span> <span class="cn">NA</span>, <span class="at">lty =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">2</span>, <span class="dv">2</span>), </span>
+<span id="cb53-62"><a href="#cb53-62" aria-hidden="true" tabindex="-1"></a>       <span class="at">legend =</span> <span class="fu">c</span>(<span class="st">"2 allèles 4"</span>, <span class="st">"1 allèle 4"</span>, <span class="st">"0 allèle 4"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Projet2025_TL_SB_files/figure-html/unnamed-chunk-25-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="question-2.d-explication-ic" class="level2">
+<h2 class="anchored" data-anchor-id="question-2.d-explication-ic">Question 2.d) Explication IC</h2>
+<p>On a construit les intervalles de confiance à 95% :<br>
+- On avait déjà estimé <span class="math inline">\(\beta\)</span> , avec la méthode ci dessus<br>
+- On va donc estimé l’erreur standard de <span class="math inline">\(\hat{\beta}\)</span> qui, sous l’hypothèse d’indépendance est approximée par la racine inverse du dénominateur utilisé pour estimer <span class="math inline">\(\beta\)</span><br>
+- Ensuite :<br>
+En supposant que <span class="math inline">\(\hat{\beta}\)</span> suit une loi normale, on construit l’intervalle :</p>
+<p><span class="math display">\[
+IC_{95\%} = \left[ \hat{\beta} - 1{,}96 \cdot SE(\hat{\beta}),\ \hat{\beta} + 1{,}96 \cdot SE(\hat{\beta}) \right]
+\]</span></p>
+<p>-Finalement on applique à la courbe de pénétrance</p>
+<p><br>
+On peut remarquer que pour SORL1 non porteurs : il n’y a pas de bande d’intervalles de confiance, ce qui est normal car le risque ne dépend pas de <span class="math inline">\(\beta\)</span> .</p>
+</section>
+<section id="question-3.a-estimer-beta1-beta2-beta3" class="level2">
+<h2 class="anchored" data-anchor-id="question-3.a-estimer-beta1-beta2-beta3">Question 3.a) Estimer beta1, beta2, beta3</h2>
+<p>Dans ce modèle on suppose que l’effet du variant SORL1 dépend de l’âge.</p>
+<p><span class="math display">\[
+\beta(t) =
+\begin{cases}
+\beta_1 &amp; \text{si } t &lt; 70 \\
+\beta_2 &amp; \text{si } 70 \leq t &lt; 80 \\
+\beta_3 &amp; \text{si } t \geq 80
+\end{cases}
+\]</span></p>
+<p>On a donc un taux de survenue de la maladie de :</p>
+<p><span class="math display">\[
+\lambda(t \mid a, s) = \lambda_{nc}(t \mid a) \cdot \exp(\beta(t) \cdot 1_{s = 1})
+\]</span></p>
+<p>avec :<br>
+- <span class="math inline">\(a\)</span> désigne le génotype APOE<br>
+- <span class="math inline">\(s\)</span> = 1 indique que l’individu est porteur d’un variant SORL1 d’intêret<br>
+- <span class="math inline">\(\lambda_{nc}(t \mid a)\)</span> est le taux de base conditionnel à APOE</p>
+<p>On passe à la log-vraisemblance conditionnelle</p>
+<p>on note <span class="math inline">\(t_i\)</span> l’âge d’observation (maladie ou censure) pour individu <span class="math inline">\(i\)</span> et <span class="math inline">\(\delta_i\)</span> = 1 si l’indiv a développé la maladie, 0 sinon.</p>
+<p><span class="math display">\[
+\log L(\beta) = \sum_i \left[
+\log(S(t_i \mid a_i, s_i)) + \delta_i \cdot \log(\lambda(t_i \mid a_i, s_i))
+\right]
+\]</span></p>
+<p>Le taux de risque est donné par</p>
+<p><span class="math display">\[
+\lambda(t_i \mid a_i, s_i) = \lambda_{nc}(t_i \mid a_i) \cdot \exp(\beta(t_i) \cdot 1_{s_i = 1})
+\]</span></p>
+<p>donc ,</p>
+<p><span class="math display">\[
+\log(\lambda(t_i \mid a_i, s_i)) = \log(\lambda_{nc}(t_i \mid a_i)) + \beta(t_i) \cdot 1_{s_i = 1}
+\]</span></p>
+<p>et la fonction de survie est</p>
+<p><span class="math display">\[
+S(t_i \mid a_i, s_i) = \exp\left( -\int_0^{t_i} \lambda(u \mid a_i, s_i) du \right)
+\]</span></p>
+<p>On peut maintenant découper en tranche d’âges<br>
+on a 3 cas selon la valeur de <span class="math inline">\(t_i\)</span></p>
+<p>si <span class="math inline">\(t_i\)</span> &lt; 70 :<br>
+<span class="math display">\[
+\log(S(t_i)) = -\Lambda_{nc}(t_i \mid a_i) \cdot \exp(\beta_1 \cdot 1_{s_i = 1})
+\]</span></p>
+<p>si 70 &lt; <span class="math inline">\(t_i\)</span> &lt; 80 :</p>
+<p><span class="math display">\[
+\log(S(t_i)) =
+- \Lambda_{nc}(70 \mid a_i) \cdot \exp(\beta_1 \cdot 1_{s_i = 1})
+- \left( \Lambda_{nc}(t_i \mid a_i) - \Lambda_{nc}(70 \mid a_i) \right) \cdot \exp(\beta_2 \cdot 1_{s_i = 1})
+\]</span></p>
+<p>si <span class="math inline">\(t_i\)</span> &gt; 80 :</p>
+<p><span class="math display">\[
+\log(S(t_i)) =
+- \Lambda_{nc}(70 \mid a_i) \cdot \exp(\beta_1 \cdot 1_{s_i = 1})
+- \left( \Lambda_{nc}(80 \mid a_i) - \Lambda_{nc}(70 \mid a_i) \right) \cdot \exp(\beta_2 \cdot 1_{s_i = 1})
+- \left( \Lambda_{nc}(t_i \mid a_i) - \Lambda_{nc}(80 \mid a_i) \right) \cdot \exp(\beta_3 \cdot 1_{s_i = 1})
+\]</span></p>
+<p>On va calculer les estimateurs en maximisant la log-vraisemblance logL( $ \beta$ ) , donc on annule les dérivées partielles :</p>
+<p><span class="math display">\[
+\frac{\partial \log L}{\partial \beta_j}(\hat{\beta}) = 0 \quad \text{ pour } j = 1, 2, 3
+\]</span></p>
+<p>donc pour les indiv atteints avant 70 ans :</p>
+<p>on avait</p>
+<p><span class="math display">\[
+\log L_1(\beta_1) = \sum_{t_i &lt; 70,\ s_i = 1} \left[
+- \Lambda_{nc}(t_i \mid a_i) \cdot \exp(\beta_1)
++ \delta_i \cdot \beta_1
+\right]
+\]</span></p>
+<p>on dérive en <span class="math inline">\(\beta_1\)</span></p>
+<p><span class="math display">\[
+\frac{\partial \log L_1}{\partial \beta_1} = \sum_{t_i &lt; 70,\ s_i = 1} \left[
+- \Lambda_{nc}(t_i \mid a_i) \cdot \exp(\beta_1) + \delta_i
+\right]
+\]</span></p>
+<p>on cherche le point où cette dérivée est nulle</p>
+<p><span class="math display">\[
+\sum_{t_i &lt; 70,\ s_i = 1} \left[
+- \Lambda_{nc}(t_i \mid a_i) \cdot \exp(\hat{\beta}_1) + \delta_i
+\right] = 0
+\]</span></p>
+<p><span class="math display">\[
+\exp(\hat{\beta}_1) = \frac{
+\sum_{t_i &lt; 70,\ s_i = 1} \delta_i
+}{
+\sum_{t_i &lt; 70,\ s_i = 1} \Lambda_{nc}(t_i \mid a_i)
+}
+\]</span></p>
+<p><span class="math display">\[
+\hat{\beta}_1 = \log \left(
+\frac{
+\sum_{t_i &lt; 70,\ s_i = 1} \delta_i
+}{
+\sum_{t_i &lt; 70,\ s_i = 1} \Lambda_{nc}(t_i \mid a_i)
+}
+\right)
+\]</span></p>
+<p>En appliquant la même méthode pour <span class="math inline">\(\beta_2\)</span> et <span class="math inline">\(\beta_3\)</span> on trouve :</p>
+<p>pour les indiv atteints entre 70 et 80 ans :</p>
+<p><span class="math display">\[
+\hat{\beta}_2 = \log \left(
+\frac{
+\sum_{70 \leq t_i &lt; 80,\ s_i = 1} \delta_i
+}{
+\sum_{70 \leq t_i &lt; 80,\ s_i = 1} \left[ \Lambda_{nc}(t_i \mid a_i) - \Lambda_{nc}(70 \mid a_i) \right]
+}
+\right)
+\]</span></p>
+<p>pour les indiv atteints après 80 ans :</p>
+<p><span class="math display">\[
+\hat{\beta}_3 = \log \left(
+\frac{
+\sum_{t_i \geq 80,\ s_i = 1} \delta_i
+}{
+\sum_{t_i \geq 80,\ s_i = 1} \left[ \Lambda_{nc}(t_i \mid a_i) - \Lambda_{nc}(80 \mid a_i) \right]
+}
+\right)
+\]</span></p>
+<p>Ces estimateurs quantifient l’effet du variant SORL1 dans trois tranches d’âge distinctes.<br>
+En séparant l’âge en intervalles, on peut observer si l’effet du variant est plus marqué à certains âges.</p>
+</section>
+<section id="question-3.b-calculer-beta1-beta2-beta3" class="level2">
+<h2 class="anchored" data-anchor-id="question-3.b-calculer-beta1-beta2-beta3">Question 3.b) Calculer beta1, beta2, beta3</h2>
+<p>on applique ça dans nos données et on calcul les valeurs des estimateurs</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="co"># calcul de beta1 ( &lt; 70 ans)</span></span>
+<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a>dataEC<span class="sc">$</span>Lnc80 <span class="ot">=</span> <span class="fu">mapply</span>(Cumullambda.APOE, <span class="at">nb4 =</span> dataEC<span class="sc">$</span>APOE.nb4, <span class="at">t =</span> <span class="dv">80</span>, <span class="at">u =</span> <span class="dv">0</span>)</span>
+<span id="cb54-3"><a href="#cb54-3" aria-hidden="true" tabindex="-1"></a>dataEC<span class="sc">$</span>Lnc70 <span class="ot">=</span> <span class="fu">mapply</span>(Cumullambda.APOE, <span class="at">nb4 =</span> dataEC<span class="sc">$</span>APOE.nb4, <span class="at">t =</span> <span class="dv">70</span>, <span class="at">u =</span> <span class="dv">0</span>)</span>
+<span id="cb54-4"><a href="#cb54-4" aria-hidden="true" tabindex="-1"></a>dataEC<span class="sc">$</span>Lnc <span class="ot">=</span> <span class="fu">mapply</span>(Cumullambda.APOE, <span class="at">nb4 =</span> dataEC<span class="sc">$</span>APOE.nb4, <span class="at">t =</span> dataEC<span class="sc">$</span>age, <span class="at">u =</span> <span class="dv">0</span>)</span>
+<span id="cb54-5"><a href="#cb54-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-6"><a href="#cb54-6" aria-hidden="true" tabindex="-1"></a><span class="co"># numerateur</span></span>
+<span id="cb54-7"><a href="#cb54-7" aria-hidden="true" tabindex="-1"></a>num <span class="ot">=</span> <span class="fu">sum</span>(dataEC[dataEC<span class="sc">$</span>SORL1.recode <span class="sc">==</span> <span class="dv">1</span> <span class="sc">&amp;</span> dataEC<span class="sc">$</span>age <span class="sc">&lt;</span> <span class="dv">70</span> <span class="sc">&amp;</span> dataEC<span class="sc">$</span>index <span class="sc">==</span> <span class="dv">0</span>, ]<span class="sc">$</span>status, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb54-8"><a href="#cb54-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-9"><a href="#cb54-9" aria-hidden="true" tabindex="-1"></a><span class="co"># denominateur</span></span>
+<span id="cb54-10"><a href="#cb54-10" aria-hidden="true" tabindex="-1"></a>denom <span class="ot">=</span> <span class="fu">sum</span>(dataEC[dataEC<span class="sc">$</span>SORL1.recode <span class="sc">==</span> <span class="dv">1</span> <span class="sc">&amp;</span> dataEC<span class="sc">$</span>age <span class="sc">&lt;</span> <span class="dv">70</span>, ]<span class="sc">$</span>Lnc, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) </span>
+<span id="cb54-11"><a href="#cb54-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-12"><a href="#cb54-12" aria-hidden="true" tabindex="-1"></a><span class="co"># beta</span></span>
+<span id="cb54-13"><a href="#cb54-13" aria-hidden="true" tabindex="-1"></a>beta1 <span class="ot">=</span> <span class="fu">log</span>(num <span class="sc">/</span> denom)</span>
+<span id="cb54-14"><a href="#cb54-14" aria-hidden="true" tabindex="-1"></a>beta1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 4.681959</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb56"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a><span class="co"># On calcule le numérateur (le nombre de malades parmi les porteurs de SORL1 dans cette tranche d'âge)</span></span>
+<span id="cb56-2"><a href="#cb56-2" aria-hidden="true" tabindex="-1"></a>num2 <span class="ot">=</span> <span class="fu">sum</span>(dataEC[dataEC<span class="sc">$</span>SORL1.recode <span class="sc">==</span> <span class="dv">1</span> <span class="sc">&amp;</span> dataEC<span class="sc">$</span>age <span class="sc">&gt;=</span> <span class="dv">70</span> <span class="sc">&amp;</span> dataEC<span class="sc">$</span>age <span class="sc">&lt;</span> <span class="dv">80</span> <span class="sc">&amp;</span> dataEC<span class="sc">$</span>index <span class="sc">==</span> <span class="dv">0</span>, ]<span class="sc">$</span>status, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb56-3"><a href="#cb56-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb56-4"><a href="#cb56-4" aria-hidden="true" tabindex="-1"></a><span class="co"># On calcule le dénominateur (la somme des risques cumulés pour les porteurs de SORL1 dans cette tranche d'âge)</span></span>
+<span id="cb56-5"><a href="#cb56-5" aria-hidden="true" tabindex="-1"></a>denom2 <span class="ot">=</span> <span class="fu">sum</span>(dataEC[dataEC<span class="sc">$</span>SORL1.recode <span class="sc">==</span> <span class="dv">1</span> <span class="sc">&amp;</span> dataEC<span class="sc">$</span>age <span class="sc">&gt;=</span> <span class="dv">70</span> <span class="sc">&amp;</span> dataEC<span class="sc">$</span>age <span class="sc">&lt;</span> <span class="dv">80</span>, ]<span class="sc">$</span>Lnc <span class="sc">-</span> dataEC[dataEC<span class="sc">$</span>SORL1.recode <span class="sc">==</span> <span class="dv">1</span> <span class="sc">&amp;</span> dataEC<span class="sc">$</span>age <span class="sc">&gt;=</span> <span class="dv">70</span> <span class="sc">&amp;</span> dataEC<span class="sc">$</span>age <span class="sc">&lt;</span> <span class="dv">80</span>, ]<span class="sc">$</span>Lnc70, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb56-6"><a href="#cb56-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb56-7"><a href="#cb56-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Estimation de beta2</span></span>
+<span id="cb56-8"><a href="#cb56-8" aria-hidden="true" tabindex="-1"></a>beta2 <span class="ot">=</span> <span class="fu">log</span>(num2 <span class="sc">/</span> denom2)</span>
+<span id="cb56-9"><a href="#cb56-9" aria-hidden="true" tabindex="-1"></a>beta2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2.984684</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb58"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="co"># On calcule le numérateur (le nombre de malades parmi les porteurs de SORL1 dans cette tranche d'âge)</span></span>
+<span id="cb58-2"><a href="#cb58-2" aria-hidden="true" tabindex="-1"></a>num3 <span class="ot">=</span> <span class="fu">sum</span>(dataEC[dataEC<span class="sc">$</span>SORL1.recode <span class="sc">==</span> <span class="dv">1</span> <span class="sc">&amp;</span> dataEC<span class="sc">$</span>age <span class="sc">&gt;=</span> <span class="dv">80</span> <span class="sc">&amp;</span> dataEC<span class="sc">$</span>index <span class="sc">==</span> <span class="dv">0</span>, ]<span class="sc">$</span>status, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb58-3"><a href="#cb58-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb58-4"><a href="#cb58-4" aria-hidden="true" tabindex="-1"></a><span class="co"># On calcule le dénominateur (la somme des risques cumulés pour les porteurs de SORL1 dans cette tranche d'âge)</span></span>
+<span id="cb58-5"><a href="#cb58-5" aria-hidden="true" tabindex="-1"></a>denom3 <span class="ot">=</span> <span class="fu">sum</span>(dataEC[dataEC<span class="sc">$</span>SORL1.recode <span class="sc">==</span> <span class="dv">1</span> <span class="sc">&amp;</span> dataEC<span class="sc">$</span>age <span class="sc">&gt;=</span> <span class="dv">80</span>, ]<span class="sc">$</span>Lnc <span class="sc">-</span> dataEC[dataEC<span class="sc">$</span>SORL1.recode <span class="sc">==</span> <span class="dv">1</span> <span class="sc">&amp;</span> dataEC<span class="sc">$</span>age <span class="sc">&gt;=</span> <span class="dv">80</span>, ]<span class="sc">$</span>Lnc80, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb58-6"><a href="#cb58-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb58-7"><a href="#cb58-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Estimation de beta3</span></span>
+<span id="cb58-8"><a href="#cb58-8" aria-hidden="true" tabindex="-1"></a>beta3 <span class="ot">=</span> <span class="fu">log</span>(num3 <span class="sc">/</span> denom3)</span>
+<span id="cb58-9"><a href="#cb58-9" aria-hidden="true" tabindex="-1"></a>beta3</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1.842405</code></pre>
+</div>
+</div>
+</section>
+<section id="question-3.c-et-d-courbe-de-pénétrance-avec-ic" class="level2">
+<h2 class="anchored" data-anchor-id="question-3.c-et-d-courbe-de-pénétrance-avec-ic">Question 3.c) et d) Courbe de pénétrance avec IC</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb60"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a>nb_iteration <span class="ot">=</span> <span class="dv">100</span>  <span class="co"># Nombre d'itérations</span></span>
+<span id="cb60-2"><a href="#cb60-2" aria-hidden="true" tabindex="-1"></a>age <span class="ot">=</span> <span class="dv">40</span><span class="sc">:</span><span class="dv">100</span>  <span class="co"># Plage d'âges</span></span>
+<span id="cb60-3"><a href="#cb60-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb60-4"><a href="#cb60-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Fonction pour calculer la pénétrance en fonction de l'âge, du nb4 et de beta</span></span>
+<span id="cb60-5"><a href="#cb60-5" aria-hidden="true" tabindex="-1"></a>calculate_penetrance <span class="ot">&lt;-</span> <span class="cf">function</span>(age, nb4, beta) {</span>
+<span id="cb60-6"><a href="#cb60-6" aria-hidden="true" tabindex="-1"></a>  L <span class="ot">=</span> <span class="fu">Cumullambda.APOE</span>(<span class="at">nb4 =</span> nb4, <span class="at">t =</span> age, <span class="at">u =</span> <span class="dv">0</span>)  <span class="co"># Utilisation de la fonction Cumullambda</span></span>
+<span id="cb60-7"><a href="#cb60-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="dv">1</span> <span class="sc">-</span> <span class="fu">exp</span>(<span class="sc">-</span>L <span class="sc">*</span> <span class="fu">exp</span>(beta)))</span>
+<span id="cb60-8"><a href="#cb60-8" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb60-9"><a href="#cb60-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb60-10"><a href="#cb60-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Initialisation des matrices de pénétrance complexe</span></span>
+<span id="cb60-11"><a href="#cb60-11" aria-hidden="true" tabindex="-1"></a>matrice_penetrance0_complexe <span class="ot">=</span> <span class="fu">matrix</span>(<span class="cn">NA</span>, <span class="at">nrow =</span> <span class="fu">length</span>(age), <span class="at">ncol =</span> nb_iteration)</span>
+<span id="cb60-12"><a href="#cb60-12" aria-hidden="true" tabindex="-1"></a>matrice_penetrance1_complexe <span class="ot">=</span> <span class="fu">matrix</span>(<span class="cn">NA</span>, <span class="at">nrow =</span> <span class="fu">length</span>(age), <span class="at">ncol =</span> nb_iteration)</span>
+<span id="cb60-13"><a href="#cb60-13" aria-hidden="true" tabindex="-1"></a>matrice_penetrance2_complexe <span class="ot">=</span> <span class="fu">matrix</span>(<span class="cn">NA</span>, <span class="at">nrow =</span> <span class="fu">length</span>(age), <span class="at">ncol =</span> nb_iteration)</span>
+<span id="cb60-14"><a href="#cb60-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb60-15"><a href="#cb60-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Calcul des pénétrances et remplissage des matrices</span></span>
+<span id="cb60-16"><a href="#cb60-16" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(age)) {</span>
+<span id="cb60-17"><a href="#cb60-17" aria-hidden="true" tabindex="-1"></a>  age_val <span class="ot">=</span> age[i]</span>
+<span id="cb60-18"><a href="#cb60-18" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (j <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>nb_iteration) {</span>
+<span id="cb60-19"><a href="#cb60-19" aria-hidden="true" tabindex="-1"></a>    nb4 <span class="ot">=</span> <span class="fu">sample</span>(<span class="dv">0</span><span class="sc">:</span><span class="dv">2</span>, <span class="dv">1</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>)  <span class="co"># Exemple : génération aléatoire du nombre d'allèles 4</span></span>
+<span id="cb60-20"><a href="#cb60-20" aria-hidden="true" tabindex="-1"></a>    beta <span class="ot">=</span> <span class="fu">sample</span>(<span class="fu">c</span>(beta1, beta2, beta3), <span class="dv">1</span>)  <span class="co"># Exemple : génération aléatoire d'un beta parmi les trois</span></span>
+<span id="cb60-21"><a href="#cb60-21" aria-hidden="true" tabindex="-1"></a>    penetrance <span class="ot">=</span> <span class="fu">calculate_penetrance</span>(age_val, nb4, beta)  <span class="co"># Calcul de la pénétrance en fonction des paramètres</span></span>
+<span id="cb60-22"><a href="#cb60-22" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (nb4 <span class="sc">==</span> <span class="dv">0</span>) {</span>
+<span id="cb60-23"><a href="#cb60-23" aria-hidden="true" tabindex="-1"></a>      matrice_penetrance0_complexe[i, j] <span class="ot">=</span> penetrance</span>
+<span id="cb60-24"><a href="#cb60-24" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> <span class="cf">if</span> (nb4 <span class="sc">==</span> <span class="dv">1</span>) {</span>
+<span id="cb60-25"><a href="#cb60-25" aria-hidden="true" tabindex="-1"></a>      matrice_penetrance1_complexe[i, j] <span class="ot">=</span> penetrance</span>
+<span id="cb60-26"><a href="#cb60-26" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> {</span>
+<span id="cb60-27"><a href="#cb60-27" aria-hidden="true" tabindex="-1"></a>      matrice_penetrance2_complexe[i, j] <span class="ot">=</span> penetrance</span>
+<span id="cb60-28"><a href="#cb60-28" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb60-29"><a href="#cb60-29" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb60-30"><a href="#cb60-30" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb60-31"><a href="#cb60-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb60-32"><a href="#cb60-32" aria-hidden="true" tabindex="-1"></a><span class="co"># Fonction pour tracer les courbes de pénétrance en fonction de beta1, beta2, et beta3 et inclure les intervalles de confiance</span></span>
+<span id="cb60-33"><a href="#cb60-33" aria-hidden="true" tabindex="-1"></a>plot_penetrance_avec_IC <span class="ot">=</span> <span class="cf">function</span>(beta1, beta2, beta3) {</span>
+<span id="cb60-34"><a href="#cb60-34" aria-hidden="true" tabindex="-1"></a>  <span class="fu">plot</span>(age, <span class="at">type =</span> <span class="st">"n"</span>, <span class="at">xlim =</span> <span class="fu">range</span>(age), <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>), <span class="at">xlab =</span> <span class="st">"Âge"</span>, <span class="at">ylab =</span> <span class="st">"Pénétrance"</span>, <span class="at">main =</span> <span class="st">"Pénétrance, modèle complexe"</span>)</span>
+<span id="cb60-35"><a href="#cb60-35" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb60-36"><a href="#cb60-36" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Calculer les intervalles de confiance pour chaque combinaison d'âge et de nb4</span></span>
+<span id="cb60-37"><a href="#cb60-37" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (nb4 <span class="cf">in</span> <span class="dv">0</span><span class="sc">:</span><span class="dv">2</span>) {</span>
+<span id="cb60-38"><a href="#cb60-38" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Sélectionner la matrice de pénétrance appropriée</span></span>
+<span id="cb60-39"><a href="#cb60-39" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (nb4 <span class="sc">==</span> <span class="dv">0</span>) penetrance_matrix <span class="ot">=</span> matrice_penetrance0_complexe</span>
+<span id="cb60-40"><a href="#cb60-40" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span> <span class="cf">if</span> (nb4 <span class="sc">==</span> <span class="dv">1</span>) penetrance_matrix <span class="ot">=</span> matrice_penetrance1_complexe</span>
+<span id="cb60-41"><a href="#cb60-41" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span> penetrance_matrix <span class="ot">=</span> matrice_penetrance2_complexe</span>
+<span id="cb60-42"><a href="#cb60-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb60-43"><a href="#cb60-43" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Calculer la moyenne des pénétrances pour chaque âge</span></span>
+<span id="cb60-44"><a href="#cb60-44" aria-hidden="true" tabindex="-1"></a>    mean_penetrance <span class="ot">=</span> <span class="fu">apply</span>(penetrance_matrix, <span class="dv">1</span>, mean, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb60-45"><a href="#cb60-45" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb60-46"><a href="#cb60-46" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Calculer les intervalles de confiance pour chaque courbe de pénétrance</span></span>
+<span id="cb60-47"><a href="#cb60-47" aria-hidden="true" tabindex="-1"></a>    IC_borne_inf <span class="ot">=</span> <span class="fu">apply</span>(penetrance_matrix, <span class="dv">1</span>, quantile, <span class="at">probs =</span> <span class="fl">0.025</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb60-48"><a href="#cb60-48" aria-hidden="true" tabindex="-1"></a>    IC_borne_sup <span class="ot">=</span> <span class="fu">apply</span>(penetrance_matrix, <span class="dv">1</span>, quantile, <span class="at">probs =</span> <span class="fl">0.975</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb60-49"><a href="#cb60-49" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb60-50"><a href="#cb60-50" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Tracer la courbe de pénétrance</span></span>
+<span id="cb60-51"><a href="#cb60-51" aria-hidden="true" tabindex="-1"></a>    <span class="fu">lines</span>(age, mean_penetrance, <span class="at">col =</span> <span class="fu">c</span>(<span class="st">"red"</span>, <span class="st">"orange"</span>, <span class="st">"blue"</span>)[nb4 <span class="sc">+</span> <span class="dv">1</span>], <span class="at">lwd =</span> <span class="dv">2</span>)</span>
+<span id="cb60-52"><a href="#cb60-52" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb60-53"><a href="#cb60-53" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Tracer l'intervalle de confiance</span></span>
+<span id="cb60-54"><a href="#cb60-54" aria-hidden="true" tabindex="-1"></a>    <span class="fu">lines</span>(age, IC_borne_inf, <span class="at">col =</span> <span class="fu">c</span>(<span class="st">"red"</span>, <span class="st">"orange"</span>, <span class="st">"blue"</span>)[nb4 <span class="sc">+</span> <span class="dv">1</span>], <span class="at">lty =</span> <span class="dv">2</span>)</span>
+<span id="cb60-55"><a href="#cb60-55" aria-hidden="true" tabindex="-1"></a>    <span class="fu">lines</span>(age, IC_borne_sup, <span class="at">col =</span> <span class="fu">c</span>(<span class="st">"red"</span>, <span class="st">"orange"</span>, <span class="st">"blue"</span>)[nb4 <span class="sc">+</span> <span class="dv">1</span>], <span class="at">lty =</span> <span class="dv">2</span>)</span>
+<span id="cb60-56"><a href="#cb60-56" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb60-57"><a href="#cb60-57" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb60-58"><a href="#cb60-58" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Légende</span></span>
+<span id="cb60-59"><a href="#cb60-59" aria-hidden="true" tabindex="-1"></a>  <span class="fu">legend</span>(<span class="st">"topleft"</span>, <span class="at">fill =</span> <span class="fu">c</span>(<span class="st">"red"</span>, <span class="st">"orange"</span>, <span class="st">"blue"</span>), <span class="at">border =</span> <span class="cn">NA</span>, <span class="at">lty =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>), <span class="at">legend =</span> <span class="fu">c</span>(<span class="st">"0 allèle 4"</span>, <span class="st">"1 allèle 4"</span>, <span class="st">"2 allèles 4"</span>))</span>
+<span id="cb60-60"><a href="#cb60-60" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb60-61"><a href="#cb60-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb60-62"><a href="#cb60-62" aria-hidden="true" tabindex="-1"></a><span class="co"># Appel de la fonction pour tracer les courbes de pénétrance</span></span>
+<span id="cb60-63"><a href="#cb60-63" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_penetrance_avec_IC</span>(beta1, beta2, beta3)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Projet2025_TL_SB_files/figure-html/unnamed-chunk-29-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion :</h2>
+</section>
+<section id="question-4.a-quel-modèle-choisir-bic" class="level2">
+<h2 class="anchored" data-anchor-id="question-4.a-quel-modèle-choisir-bic">Question 4.a) Quel modèle choisir : BIC</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb61"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"fonction_vraisemblance.R"</span>)</span>
+<span id="cb61-2"><a href="#cb61-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb61-3"><a href="#cb61-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb61-4"><a href="#cb61-4" aria-hidden="true" tabindex="-1"></a>logvraisemblance_constant<span class="ot">=</span><span class="fu">compute.loglik</span>(<span class="at">data.param=</span>dataEC,</span>
+<span id="cb61-5"><a href="#cb61-5" aria-hidden="true" tabindex="-1"></a>                                         <span class="at">cut.off.param =</span> <span class="cn">NA</span>,</span>
+<span id="cb61-6"><a href="#cb61-6" aria-hidden="true" tabindex="-1"></a>                                         <span class="at">beta.param =</span> beta,</span>
+<span id="cb61-7"><a href="#cb61-7" aria-hidden="true" tabindex="-1"></a>                                         <span class="at">time.param =</span> <span class="st">"age"</span>,</span>
+<span id="cb61-8"><a href="#cb61-8" aria-hidden="true" tabindex="-1"></a>                                         <span class="at">status.param =</span> <span class="st">"status"</span>,</span>
+<span id="cb61-9"><a href="#cb61-9" aria-hidden="true" tabindex="-1"></a>                                         <span class="at">GENE.param =</span> <span class="st">"SORL1.recode"</span>,</span>
+<span id="cb61-10"><a href="#cb61-10" aria-hidden="true" tabindex="-1"></a>                                         <span class="at">APOE.param =</span> <span class="st">"APOE.nb4"</span></span>
+<span id="cb61-11"><a href="#cb61-11" aria-hidden="true" tabindex="-1"></a>                                        </span>
+<span id="cb61-12"><a href="#cb61-12" aria-hidden="true" tabindex="-1"></a>                                )</span>
+<span id="cb61-13"><a href="#cb61-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb61-14"><a href="#cb61-14" aria-hidden="true" tabindex="-1"></a>beta_group<span class="ot">=</span><span class="fu">c</span>(beta1,beta2,beta3)</span>
+<span id="cb61-15"><a href="#cb61-15" aria-hidden="true" tabindex="-1"></a>logvraisemblance_group<span class="ot">=</span><span class="fu">compute.loglik</span>(<span class="at">data.param=</span>dataEC,</span>
+<span id="cb61-16"><a href="#cb61-16" aria-hidden="true" tabindex="-1"></a>                                         <span class="at">cut.off.param =</span> <span class="fu">c</span>(<span class="dv">70</span>,<span class="dv">80</span>),</span>
+<span id="cb61-17"><a href="#cb61-17" aria-hidden="true" tabindex="-1"></a>                                         <span class="at">beta.param =</span> beta_group,</span>
+<span id="cb61-18"><a href="#cb61-18" aria-hidden="true" tabindex="-1"></a>                                         <span class="at">time.param =</span> <span class="st">"age"</span>,</span>
+<span id="cb61-19"><a href="#cb61-19" aria-hidden="true" tabindex="-1"></a>                                         <span class="at">status.param =</span> <span class="st">"status"</span>,</span>
+<span id="cb61-20"><a href="#cb61-20" aria-hidden="true" tabindex="-1"></a>                                         <span class="at">GENE.param =</span> <span class="st">"SORL1.recode"</span>,</span>
+<span id="cb61-21"><a href="#cb61-21" aria-hidden="true" tabindex="-1"></a>                                         <span class="at">APOE.param =</span> <span class="st">"APOE.nb4"</span></span>
+<span id="cb61-22"><a href="#cb61-22" aria-hidden="true" tabindex="-1"></a>                                        </span>
+<span id="cb61-23"><a href="#cb61-23" aria-hidden="true" tabindex="-1"></a>                                )</span>
+<span id="cb61-24"><a href="#cb61-24" aria-hidden="true" tabindex="-1"></a><span class="co"># Taille de l'échantillon</span></span>
+<span id="cb61-25"><a href="#cb61-25" aria-hidden="true" tabindex="-1"></a>n <span class="ot">=</span> <span class="fu">nrow</span>(dataEC)</span>
+<span id="cb61-26"><a href="#cb61-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb61-27"><a href="#cb61-27" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. Calcul du BIC pour chaque modèle</span></span>
+<span id="cb61-28"><a href="#cb61-28" aria-hidden="true" tabindex="-1"></a>k_constant <span class="ot">=</span> <span class="dv">1</span>  <span class="co"># Nombre de paramètres (1 pour le modèle avec β constant)</span></span>
+<span id="cb61-29"><a href="#cb61-29" aria-hidden="true" tabindex="-1"></a>BIC_constant <span class="ot">=</span> <span class="sc">-</span><span class="dv">2</span> <span class="sc">*</span> logvraisemblance_constant <span class="sc">+</span> k_constant <span class="sc">*</span> <span class="fu">log</span>(n)</span>
+<span id="cb61-30"><a href="#cb61-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb61-31"><a href="#cb61-31" aria-hidden="true" tabindex="-1"></a>k_grouped <span class="ot">=</span> <span class="dv">3</span>  <span class="co"># Nombre de paramètres (3 pour le modèle avec β variant)</span></span>
+<span id="cb61-32"><a href="#cb61-32" aria-hidden="true" tabindex="-1"></a>BIC_group <span class="ot">=</span> <span class="sc">-</span><span class="dv">2</span> <span class="sc">*</span> logvraisemblance_group <span class="sc">+</span> k_grouped <span class="sc">*</span> <span class="fu">log</span>(n)</span>
+<span id="cb61-33"><a href="#cb61-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb61-34"><a href="#cb61-34" aria-hidden="true" tabindex="-1"></a><span class="co"># 4. Comparaison des BIC</span></span>
+<span id="cb61-35"><a href="#cb61-35" aria-hidden="true" tabindex="-1"></a>BIC_constant  <span class="co"># Affiche le BIC du modèle avec β constant</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 714.295</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb63"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a>BIC_group   <span class="co"># Affiche le BIC du modèle avec β variant</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 636.5965</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb65"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Comparaison des modèles en fonction du BIC</span></span>
+<span id="cb65-2"><a href="#cb65-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (BIC_constant <span class="sc">&lt;</span> BIC_group) {</span>
+<span id="cb65-3"><a href="#cb65-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="st">"Le modèle avec β constant est préféré (BIC le plus bas)."</span>)</span>
+<span id="cb65-4"><a href="#cb65-4" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> {</span>
+<span id="cb65-5"><a href="#cb65-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="st">"Le modèle avec β variant est préféré (BIC le plus bas)."</span>)</span>
+<span id="cb65-6"><a href="#cb65-6" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Le modèle avec β variant est préféré (BIC le plus bas)."</code></pre>
+</div>
+</div>
+</section>
+<section id="question-4.b-conclusion-générale" class="level2">
+<h2 class="anchored" data-anchor-id="question-4.b-conclusion-générale">Question 4.b) Conclusion générale</h2>
+<p>Avec tout nos résultats obtenus, on peut tirer les conclusions suivantes sur la pénétrance de la maladie d’Alzheimer chez les porteurs et non-porteurs d’un variant dans le gène SORL1:</p>
+<ul>
+<li><p>les courbes de pénétrances tracées indiquent que la présence d’un variant dans le gène SORL1 influence beaucoup la pénétrance de la maladie d’Alzheimer. Les individus porteurs de ce variant ont une pénétrance plus élevée que ceux qui n’ont pas le variant.</p></li>
+<li><p>de plus, la pénétrance de la maladie augmente avec l’âge chez les porteurs et les non-porteurs du variant, l’augmentation est même plus rapide chez les porteurs du variant.</p></li>
+<li><p>les individus ayant des allèles 4 sur APOE ont une pénétrance plus élevée que ceux qui n’ent ont pas. Et le nombre d’allèle 4 influe également, plus un individu en possède, plus la pénétrance est grande.</p></li>
+</ul>
+<p>Au final, l’analyse de la pénétrance de la maladie d’Alzheimer chez les porteurs et les non-porteurs d’un variant perte de fonction dans le gène SORL1 indique l’importance des différentes variables qui peuvent influer la présence ou non d’un maladie (ici Alzheimer).</p>
+</section>
+<section id="question-4.c-axes-damélioration" class="level2">
+<h2 class="anchored" data-anchor-id="question-4.c-axes-damélioration">Question 4.c) Axes d’amélioration</h2>
+<p>On pourrait avoir plusieurs axes d’amélioration pour étoffer l’étude :</p>
+<ul>
+<li><p>Prendre en compte plus de facteurs comme le niveau d’éducation, la situation économique et sociale, le mode de vie etc…</p></li>
+<li><p>Augmenter la taille de l’échantillon : cela permettrait d’augmenter la puissance statistique de l’étude.</p></li>
+<li><p>Une méthode pour valider les résultats : valider les résultats à l’aide de données indépendantes ou le cross-validation.</p></li>
+<li><p>Analyser plus d’intérations génétiques : d’autres gènes pourraient être impliqués dans la maladie.</p></li>
+</ul>
+</section>
+<section id="partie-2-une-étude-de-simulation" class="level2">
+<h2 class="anchored" data-anchor-id="partie-2-une-étude-de-simulation">Partie 2 : Une étude de simulation</h2>
+</section>
+<section id="question-1.a-construction-aléatoire-dune-cohorte-de-50-familles" class="level2">
+<h2 class="anchored" data-anchor-id="question-1.a-construction-aléatoire-dune-cohorte-de-50-familles">Question 1.a) Construction aléatoire d’une cohorte de 50 familles</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb67"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">369</span>)</span>
+<span id="cb67-2"><a href="#cb67-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb67-3"><a href="#cb67-3" aria-hidden="true" tabindex="-1"></a><span class="co">#définition de theta</span></span>
+<span id="cb67-4"><a href="#cb67-4" aria-hidden="true" tabindex="-1"></a>theta<span class="ot">=</span><span class="fl">0.01</span></span>
+<span id="cb67-5"><a href="#cb67-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb67-6"><a href="#cb67-6" aria-hidden="true" tabindex="-1"></a><span class="co">#Fonction pour générer les données d'une famille</span></span>
+<span id="cb67-7"><a href="#cb67-7" aria-hidden="true" tabindex="-1"></a>construc_famille<span class="ot">=</span><span class="cf">function</span>(){</span>
+<span id="cb67-8"><a href="#cb67-8" aria-hidden="true" tabindex="-1"></a>  <span class="co">#génération des identifiants des individus</span></span>
+<span id="cb67-9"><a href="#cb67-9" aria-hidden="true" tabindex="-1"></a>  famid<span class="ot">=</span><span class="fu">rep</span>(<span class="dv">1</span>,<span class="dv">5</span>)</span>
+<span id="cb67-10"><a href="#cb67-10" aria-hidden="true" tabindex="-1"></a>  indid<span class="ot">=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>)</span>
+<span id="cb67-11"><a href="#cb67-11" aria-hidden="true" tabindex="-1"></a>  sexe<span class="ot">=</span><span class="fu">sample</span>(<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>),<span class="dv">5</span>,<span class="at">replace=</span><span class="cn">TRUE</span>)</span>
+<span id="cb67-12"><a href="#cb67-12" aria-hidden="true" tabindex="-1"></a>  patid<span class="ot">=</span><span class="fu">sample</span>(<span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">1</span>),<span class="dv">5</span>,<span class="at">replace=</span><span class="cn">TRUE</span>)</span>
+<span id="cb67-13"><a href="#cb67-13" aria-hidden="true" tabindex="-1"></a>  matid<span class="ot">=</span><span class="fu">sample</span>(<span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">2</span>),<span class="dv">5</span>,<span class="at">replace=</span><span class="cn">TRUE</span>)</span>
+<span id="cb67-14"><a href="#cb67-14" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb67-15"><a href="#cb67-15" aria-hidden="true" tabindex="-1"></a>  <span class="co">#détermination du génétype pour chaque individu</span></span>
+<span id="cb67-16"><a href="#cb67-16" aria-hidden="true" tabindex="-1"></a>  variant<span class="ot">=</span><span class="fu">rep</span>(<span class="dv">0</span>,<span class="dv">5</span>)</span>
+<span id="cb67-17"><a href="#cb67-17" aria-hidden="true" tabindex="-1"></a>  parent_porteur<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>,<span class="dv">1</span>) <span class="co">#choix aléatoire du parent porteur</span></span>
+<span id="cb67-18"><a href="#cb67-18" aria-hidden="true" tabindex="-1"></a>  variant[parent_porteur]<span class="ot">=</span><span class="dv">1</span> <span class="co">#le parent porteur transmet le variant</span></span>
+<span id="cb67-19"><a href="#cb67-19" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb67-20"><a href="#cb67-20" aria-hidden="true" tabindex="-1"></a>  <span class="co">#transfert du variant aux enfants</span></span>
+<span id="cb67-21"><a href="#cb67-21" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">3</span><span class="sc">:</span><span class="dv">5</span>){</span>
+<span id="cb67-22"><a href="#cb67-22" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (variant[indid[i]]<span class="sc">==</span><span class="dv">0</span>){</span>
+<span id="cb67-23"><a href="#cb67-23" aria-hidden="true" tabindex="-1"></a>      variant[indid[i]]<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">0</span><span class="sc">:</span><span class="dv">1</span>,<span class="dv">1</span>)</span>
+<span id="cb67-24"><a href="#cb67-24" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb67-25"><a href="#cb67-25" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb67-26"><a href="#cb67-26" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb67-27"><a href="#cb67-27" aria-hidden="true" tabindex="-1"></a>  <span class="co">#génération aléatoire de l'âge de début de la maladie</span></span>
+<span id="cb67-28"><a href="#cb67-28" aria-hidden="true" tabindex="-1"></a>  debut<span class="ot">=</span><span class="sc">-</span><span class="fu">log</span>(<span class="fu">runif</span>(<span class="dv">5</span>))<span class="sc">/</span>theta</span>
+<span id="cb67-29"><a href="#cb67-29" aria-hidden="true" tabindex="-1"></a>  debut[variant<span class="sc">==</span><span class="dv">0</span>]<span class="ot">=</span><span class="cn">Inf</span> <span class="co">#les non porteurs ne développent pas la maladie</span></span>
+<span id="cb67-30"><a href="#cb67-30" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb67-31"><a href="#cb67-31" aria-hidden="true" tabindex="-1"></a>  <span class="co">#génération aléatoire de l'âge de censure</span></span>
+<span id="cb67-32"><a href="#cb67-32" aria-hidden="true" tabindex="-1"></a>  censure<span class="ot">=</span><span class="fu">rnorm</span>(<span class="dv">5</span>,<span class="at">mean=</span><span class="dv">65</span>,<span class="at">sd=</span><span class="dv">15</span>)</span>
+<span id="cb67-33"><a href="#cb67-33" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb67-34"><a href="#cb67-34" aria-hidden="true" tabindex="-1"></a>  <span class="co">#création des colonnes statut et age</span></span>
+<span id="cb67-35"><a href="#cb67-35" aria-hidden="true" tabindex="-1"></a>  statut<span class="ot">=</span><span class="fu">ifelse</span>(<span class="sc">!</span><span class="fu">is.infinite</span>(debut),<span class="dv">1</span>,<span class="dv">0</span>) <span class="co">#seul les individu ayant un age de début de maladie peuvent avoir l'étiquette 1 pour statut</span></span>
+<span id="cb67-36"><a href="#cb67-36" aria-hidden="true" tabindex="-1"></a>  age<span class="ot">=</span><span class="fu">ifelse</span>(<span class="sc">!</span><span class="fu">is.infinite</span>(debut),debut, censure)</span>
+<span id="cb67-37"><a href="#cb67-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb67-38"><a href="#cb67-38" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb67-39"><a href="#cb67-39" aria-hidden="true" tabindex="-1"></a>  <span class="co">#retourner les données de la famille sous forme de dataframe</span></span>
+<span id="cb67-40"><a href="#cb67-40" aria-hidden="true" tabindex="-1"></a>  <span class="fu">data.frame</span>(famid,indid,sexe,patid,matid,variant,statut,age)</span>
+<span id="cb67-41"><a href="#cb67-41" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb67-42"><a href="#cb67-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb67-43"><a href="#cb67-43" aria-hidden="true" tabindex="-1"></a><span class="co">#fonction pour sélectionner les familles avecu un cas index</span></span>
+<span id="cb67-44"><a href="#cb67-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb67-45"><a href="#cb67-45" aria-hidden="true" tabindex="-1"></a>selection_famille<span class="ot">=</span><span class="cf">function</span>(N){</span>
+<span id="cb67-46"><a href="#cb67-46" aria-hidden="true" tabindex="-1"></a>  familles<span class="ot">=</span><span class="fu">list</span>()</span>
+<span id="cb67-47"><a href="#cb67-47" aria-hidden="true" tabindex="-1"></a>  <span class="cf">while</span>(<span class="fu">length</span>(familles)<span class="sc">&lt;</span>N){</span>
+<span id="cb67-48"><a href="#cb67-48" aria-hidden="true" tabindex="-1"></a>    famille<span class="ot">=</span><span class="fu">construc_famille</span>()</span>
+<span id="cb67-49"><a href="#cb67-49" aria-hidden="true" tabindex="-1"></a>    index<span class="ot">=</span>famille[famille<span class="sc">$</span>indid <span class="sc">%in%</span><span class="dv">3</span><span class="sc">:</span><span class="dv">5</span> <span class="sc">&amp;</span> famille<span class="sc">$</span>age<span class="sc">&lt;</span><span class="dv">20</span> <span class="sc">&amp;</span> famille<span class="sc">$</span>statut<span class="sc">==</span><span class="dv">1</span> <span class="sc">&amp;</span> famille<span class="sc">$</span>variant<span class="sc">==</span><span class="dv">1</span>,]</span>
+<span id="cb67-50"><a href="#cb67-50" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb67-51"><a href="#cb67-51" aria-hidden="true" tabindex="-1"></a>    <span class="co">#data.frame des enfants porteurs malades avant 20 ans</span></span>
+<span id="cb67-52"><a href="#cb67-52" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="fu">nrow</span>(index)<span class="sc">&gt;</span><span class="dv">0</span>){</span>
+<span id="cb67-53"><a href="#cb67-53" aria-hidden="true" tabindex="-1"></a>      <span class="co">#select aléatoirement parmi les cas index</span></span>
+<span id="cb67-54"><a href="#cb67-54" aria-hidden="true" tabindex="-1"></a>      cas_index<span class="ot">=</span>index[<span class="fu">sample</span>(<span class="fu">nrow</span>(index),<span class="dv">1</span>),<span class="st">"indid"</span>]</span>
+<span id="cb67-55"><a href="#cb67-55" aria-hidden="true" tabindex="-1"></a>      <span class="co">#attribuer 1 au cas index, 0 aux autres</span></span>
+<span id="cb67-56"><a href="#cb67-56" aria-hidden="true" tabindex="-1"></a>      famille<span class="sc">$</span>index<span class="ot">=</span><span class="fu">ifelse</span>(famille<span class="sc">$</span>indid<span class="sc">==</span>cas_index,<span class="dv">1</span>,<span class="dv">0</span>)</span>
+<span id="cb67-57"><a href="#cb67-57" aria-hidden="true" tabindex="-1"></a>      familles<span class="ot">=</span><span class="fu">c</span>(familles,<span class="fu">list</span>(famille))</span>
+<span id="cb67-58"><a href="#cb67-58" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb67-59"><a href="#cb67-59" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb67-60"><a href="#cb67-60" aria-hidden="true" tabindex="-1"></a>  familles</span>
+<span id="cb67-61"><a href="#cb67-61" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb67-62"><a href="#cb67-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb67-63"><a href="#cb67-63" aria-hidden="true" tabindex="-1"></a><span class="co">#simulation de la cohorte avec 50 familles sélectionnées</span></span>
+<span id="cb67-64"><a href="#cb67-64" aria-hidden="true" tabindex="-1"></a>cohorte <span class="ot">=</span> <span class="fu">selection_famille</span>(<span class="dv">50</span>)</span>
+<span id="cb67-65"><a href="#cb67-65" aria-hidden="true" tabindex="-1"></a><span class="co">#combinaison de toutes les familles en un seul dataframe</span></span>
+<span id="cb67-66"><a href="#cb67-66" aria-hidden="true" tabindex="-1"></a>cohorte1<span class="ot">=</span><span class="fu">do.call</span>(rbind,cohorte)</span>
+<span id="cb67-67"><a href="#cb67-67" aria-hidden="true" tabindex="-1"></a>cohorte1<span class="sc">$</span>famid<span class="ot">=</span><span class="fu">rep</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">50</span>,<span class="at">each=</span><span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="question-1.b-description-de-la-cohorte-obtenue" class="level2">
+<h2 class="anchored" data-anchor-id="question-1.b-description-de-la-cohorte-obtenue">Question 1.b) Description de la cohorte obtenue</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb68"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(cohorte1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 250   9</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb70"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb70-1"><a href="#cb70-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(cohorte1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  famid indid sexe patid matid variant statut       age index
+1     1     1    2     1     2       0      0 47.982631     0
+2     1     2    2     0     2       1      1  8.575270     0
+3     1     3    1     1     0       1      1  7.303009     1
+4     1     4    1     1     0       0      0 47.044445     0
+5     1     5    1     0     0       0      0 77.689352     0
+6     2     1    1     0     0       0      0 55.852454     0</code></pre>
+</div>
+</div>
+<p>On a bien 250 personnes (50 familles de 5 personnes)</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb72"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb72-1"><a href="#cb72-1" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(<span class="fu">unique</span>(cohorte1<span class="sc">$</span>famid))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 50</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb74"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb74-1"><a href="#cb74-1" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(cohorte1<span class="sc">$</span>sexe)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+  1   2 
+125 125 </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb76"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb76-1"><a href="#cb76-1" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(cohorte1<span class="sc">$</span>variant)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+  0   1 
+108 142 </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb78"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb78-1"><a href="#cb78-1" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(cohorte1<span class="sc">$</span>statut)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+  0   1 
+108 142 </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb80"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb80-1"><a href="#cb80-1" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(cohorte1<span class="sc">$</span>index)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+  0   1 
+200  50 </code></pre>
+</div>
+</div>
+</section>
+<section id="question-1.c-appliquer-modèle-expo" class="level2">
+<h2 class="anchored" data-anchor-id="question-1.c-appliquer-modèle-expo">Question 1.c) Appliquer modèle expo</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb82"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb82-1"><a href="#cb82-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(survival)</span>
+<span id="cb82-2"><a href="#cb82-2" aria-hidden="true" tabindex="-1"></a>model<span class="ot">=</span><span class="fu">survreg</span>(<span class="fu">Surv</span>(age,statut)<span class="sc">~</span><span class="dv">1</span>, <span class="at">data=</span>cohorte1[cohorte1<span class="sc">$</span>variant<span class="sc">==</span><span class="dv">1</span>,],<span class="at">dist=</span><span class="st">"exponential"</span>)</span>
+<span id="cb82-3"><a href="#cb82-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb82-4"><a href="#cb82-4" aria-hidden="true" tabindex="-1"></a>estimation_theta<span class="ot">=</span><span class="fu">exp</span>(<span class="sc">-</span>model<span class="sc">$</span>coefficients)</span>
+<span id="cb82-5"><a href="#cb82-5" aria-hidden="true" tabindex="-1"></a>estimation_theta</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>(Intercept) 
+ 0.01354508 </code></pre>
+</div>
+</div>
+<section id="pénétrance-moyenne" class="level3">
+<h3 class="anchored" data-anchor-id="pénétrance-moyenne">Pénétrance moyenne</h3>
+</section>
+</section>
+<section id="question-2.a-répétez-500-fois-étape-1-à-8" class="level2">
+<h2 class="anchored" data-anchor-id="question-2.a-répétez-500-fois-étape-1-à-8">Question 2.a) Répétez 500 fois étape 1 à 8</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb84"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb84-1"><a href="#cb84-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Créer une liste vide pour stocker les familles disponibles</span></span>
+<span id="cb84-2"><a href="#cb84-2" aria-hidden="true" tabindex="-1"></a>familles_disponibles <span class="ot">=</span> <span class="fu">list</span>()</span>
+<span id="cb84-3"><a href="#cb84-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb84-4"><a href="#cb84-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Remplir la liste avec des familles disponibles</span></span>
+<span id="cb84-5"><a href="#cb84-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (j <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">500</span>) {</span>
+<span id="cb84-6"><a href="#cb84-6" aria-hidden="true" tabindex="-1"></a>  familles_disponibles[[j]] <span class="ot">=</span> <span class="fu">construc_famille</span>()  <span class="co"># Utiliser la fonction construction_famille</span></span>
+<span id="cb84-7"><a href="#cb84-7" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb84-8"><a href="#cb84-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb84-9"><a href="#cb84-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Créer une liste vide pour stocker les cohortes</span></span>
+<span id="cb84-10"><a href="#cb84-10" aria-hidden="true" tabindex="-1"></a>cohortes <span class="ot">=</span> <span class="fu">list</span>()</span>
+<span id="cb84-11"><a href="#cb84-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb84-12"><a href="#cb84-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Répéter 500 fois les étapes 1 à 8</span></span>
+<span id="cb84-13"><a href="#cb84-13" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">500</span>) {</span>
+<span id="cb84-14"><a href="#cb84-14" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Étape 1 : Définir une fonction pour sélectionner les familles avec un cas index</span></span>
+<span id="cb84-15"><a href="#cb84-15" aria-hidden="true" tabindex="-1"></a>  selection_familles <span class="ot">=</span> <span class="cf">function</span>(N) {</span>
+<span id="cb84-16"><a href="#cb84-16" aria-hidden="true" tabindex="-1"></a>    familles <span class="ot">=</span> <span class="fu">list</span>()</span>
+<span id="cb84-17"><a href="#cb84-17" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> (<span class="fu">length</span>(familles) <span class="sc">&lt;</span> N) {</span>
+<span id="cb84-18"><a href="#cb84-18" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Sélectionner aléatoirement une famille disponible sans remplacement</span></span>
+<span id="cb84-19"><a href="#cb84-19" aria-hidden="true" tabindex="-1"></a>      index <span class="ot">=</span> <span class="fu">sample</span>(<span class="fu">length</span>(familles_disponibles), <span class="dv">1</span>)</span>
+<span id="cb84-20"><a href="#cb84-20" aria-hidden="true" tabindex="-1"></a>      famille <span class="ot">=</span> familles_disponibles[[index]]</span>
+<span id="cb84-21"><a href="#cb84-21" aria-hidden="true" tabindex="-1"></a>      </span>
+<span id="cb84-22"><a href="#cb84-22" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Supprimer la famille sélectionnée de la liste des familles disponibles</span></span>
+<span id="cb84-23"><a href="#cb84-23" aria-hidden="true" tabindex="-1"></a>      familles_disponibles <span class="ot">=</span> familles_disponibles[<span class="sc">-</span>index]</span>
+<span id="cb84-24"><a href="#cb84-24" aria-hidden="true" tabindex="-1"></a>      </span>
+<span id="cb84-25"><a href="#cb84-25" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Filtrer les individus de la famille selon les critères donnés</span></span>
+<span id="cb84-26"><a href="#cb84-26" aria-hidden="true" tabindex="-1"></a>      index <span class="ot">=</span> famille[famille<span class="sc">$</span>indid <span class="sc">%in%</span> <span class="dv">3</span><span class="sc">:</span><span class="dv">5</span> <span class="sc">&amp;</span> famille<span class="sc">$</span>age <span class="sc">&lt;</span> <span class="dv">20</span> <span class="sc">&amp;</span> famille<span class="sc">$</span>statut <span class="sc">==</span> <span class="dv">1</span> <span class="sc">&amp;</span> famille<span class="sc">$</span>variant <span class="sc">==</span> <span class="dv">1</span>, ]</span>
+<span id="cb84-27"><a href="#cb84-27" aria-hidden="true" tabindex="-1"></a>      </span>
+<span id="cb84-28"><a href="#cb84-28" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Vérifier s'il y a des cas index dans la famille</span></span>
+<span id="cb84-29"><a href="#cb84-29" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span> (<span class="fu">nrow</span>(index) <span class="sc">&gt;</span> <span class="dv">0</span>) {</span>
+<span id="cb84-30"><a href="#cb84-30" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Sélectionner aléatoirement parmi les cas index</span></span>
+<span id="cb84-31"><a href="#cb84-31" aria-hidden="true" tabindex="-1"></a>        cas_index <span class="ot">=</span> index[<span class="fu">sample</span>(<span class="fu">nrow</span>(index), <span class="dv">1</span>), <span class="st">"indid"</span>]</span>
+<span id="cb84-32"><a href="#cb84-32" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Attribuer 1 au cas index, 0 aux autres</span></span>
+<span id="cb84-33"><a href="#cb84-33" aria-hidden="true" tabindex="-1"></a>        famille<span class="sc">$</span>index <span class="ot">=</span> <span class="fu">ifelse</span>(famille<span class="sc">$</span>indid <span class="sc">==</span> cas_index, <span class="dv">1</span>, <span class="dv">0</span>)</span>
+<span id="cb84-34"><a href="#cb84-34" aria-hidden="true" tabindex="-1"></a>        familles <span class="ot">=</span> <span class="fu">c</span>(familles, <span class="fu">list</span>(famille))</span>
+<span id="cb84-35"><a href="#cb84-35" aria-hidden="true" tabindex="-1"></a>      }</span>
+<span id="cb84-36"><a href="#cb84-36" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb84-37"><a href="#cb84-37" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span>(familles)</span>
+<span id="cb84-38"><a href="#cb84-38" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb84-39"><a href="#cb84-39" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb84-40"><a href="#cb84-40" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Étape 2 : Simulation de la cohorte avec 50 familles sélectionnées</span></span>
+<span id="cb84-41"><a href="#cb84-41" aria-hidden="true" tabindex="-1"></a>  cohortes[[i]] <span class="ot">=</span> <span class="fu">selection_familles</span>(<span class="dv">50</span>)</span>
+<span id="cb84-42"><a href="#cb84-42" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb84-43"><a href="#cb84-43" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Étape 3 : Transformer la liste de données en un seul data frame</span></span>
+<span id="cb84-44"><a href="#cb84-44" aria-hidden="true" tabindex="-1"></a>  cohortes[[i]] <span class="ot">=</span> <span class="fu">do.call</span>(rbind, cohortes[[i]])</span>
+<span id="cb84-45"><a href="#cb84-45" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb84-46"><a href="#cb84-46" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Étape 4 : Ajouter une colonne famid pour identifier chaque famille</span></span>
+<span id="cb84-47"><a href="#cb84-47" aria-hidden="true" tabindex="-1"></a>  cohortes[[i]]<span class="sc">$</span>famid <span class="ot">=</span> <span class="fu">rep</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">50</span>, <span class="at">each=</span><span class="dv">5</span>)</span>
+<span id="cb84-48"><a href="#cb84-48" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb84-49"><a href="#cb84-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb84-50"><a href="#cb84-50" aria-hidden="true" tabindex="-1"></a><span class="co"># Vérification du nombre de bases de données dans la liste</span></span>
+<span id="cb84-51"><a href="#cb84-51" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(cohortes)  <span class="co"># Devrait être égal à 500 si on a un bon code</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 500</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb86"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb86-1"><a href="#cb86-1" aria-hidden="true" tabindex="-1"></a><span class="co">#vecteur pour stocker les estimations de theta</span></span>
+<span id="cb86-2"><a href="#cb86-2" aria-hidden="true" tabindex="-1"></a>theta_estimations<span class="ot">=</span><span class="fu">numeric</span>(<span class="at">length=</span><span class="dv">500</span>)</span>
+<span id="cb86-3"><a href="#cb86-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb86-4"><a href="#cb86-4" aria-hidden="true" tabindex="-1"></a><span class="co">#répéter l'estimation de theta pour chaque base de données dans la liste</span></span>
+<span id="cb86-5"><a href="#cb86-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">500</span>){</span>
+<span id="cb86-6"><a href="#cb86-6" aria-hidden="true" tabindex="-1"></a>  famille<span class="ot">=</span>cohortes[[i]]</span>
+<span id="cb86-7"><a href="#cb86-7" aria-hidden="true" tabindex="-1"></a>  model<span class="ot">=</span><span class="fu">survreg</span>(<span class="fu">Surv</span>(age,statut)<span class="sc">~</span><span class="dv">1</span>, <span class="at">data=</span>famille[famille<span class="sc">$</span>variant<span class="sc">==</span><span class="dv">1</span>,],<span class="at">dist=</span><span class="st">"exponential"</span>)</span>
+<span id="cb86-8"><a href="#cb86-8" aria-hidden="true" tabindex="-1"></a>  alpha<span class="ot">=</span> <span class="sc">-</span>model<span class="sc">$</span>coefficients</span>
+<span id="cb86-9"><a href="#cb86-9" aria-hidden="true" tabindex="-1"></a>  theta_estimations[i]<span class="ot">=</span><span class="fu">exp</span>(alpha)</span>
+<span id="cb86-10"><a href="#cb86-10" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb86-11"><a href="#cb86-11" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(theta_estimations)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+0.01008 0.01193 0.01251 0.01257 0.01312 0.01566 </code></pre>
+</div>
+</div>
+</section>
+<section id="question-2.b-graphe-boxplot" class="level2">
+<h2 class="anchored" data-anchor-id="question-2.b-graphe-boxplot">Question 2.b) Graphe boxplot</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb88"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb88-1"><a href="#cb88-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb88-2"><a href="#cb88-2" aria-hidden="true" tabindex="-1"></a><span class="co">#créer un dataframe ave les estimations de theta</span></span>
+<span id="cb88-3"><a href="#cb88-3" aria-hidden="true" tabindex="-1"></a>df<span class="ot">=</span><span class="fu">data.frame</span>(theta_estimations)</span>
+<span id="cb88-4"><a href="#cb88-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb88-5"><a href="#cb88-5" aria-hidden="true" tabindex="-1"></a><span class="co">#création du graph</span></span>
+<span id="cb88-6"><a href="#cb88-6" aria-hidden="true" tabindex="-1"></a>graph<span class="ot">=</span><span class="fu">ggplot</span>(df,</span>
+<span id="cb88-7"><a href="#cb88-7" aria-hidden="true" tabindex="-1"></a>             <span class="fu">aes</span>(<span class="at">x=</span><span class="st">""</span>,<span class="at">y=</span>theta_estimations))<span class="sc">+</span></span>
+<span id="cb88-8"><a href="#cb88-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">width=</span><span class="fl">0.5</span>, <span class="at">fill=</span><span class="st">"blue"</span>,<span class="at">color=</span><span class="st">"black"</span>,<span class="at">alpha=</span><span class="fl">0.7</span>)<span class="sc">+</span></span>
+<span id="cb88-9"><a href="#cb88-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept=</span>theta,<span class="at">linetype=</span><span class="st">"solid"</span>,<span class="at">color=</span><span class="st">"red"</span>,<span class="at">linewidth=</span><span class="dv">1</span>)<span class="sc">+</span></span>
+<span id="cb88-10"><a href="#cb88-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">y=</span><span class="fu">expression</span>(<span class="fu">hat</span>(theta)),</span>
+<span id="cb88-11"><a href="#cb88-11" aria-hidden="true" tabindex="-1"></a>       <span class="at">title=</span><span class="st">"Distribution des estimations de theta (cas index inclus)"</span>)<span class="sc">+</span></span>
+<span id="cb88-12"><a href="#cb88-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span>
+<span id="cb88-13"><a href="#cb88-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb88-14"><a href="#cb88-14" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(graph)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Projet2025_TL_SB_files/figure-html/unnamed-chunk-41-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="question-2.c-conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="question-2.c-conclusion">Question 2.c) Conclusion</h2>
+<p>On peut dire que la sélection des familles basée sur un cas index entraîne un biais dans l’estimation de theta. (il est plus grand que le vrai theta=0.01)</p>
+</section>
+<section id="question-3.a-comparaison-pertinence-des-estimations-selon-cas-index-inclus-ou-exclu" class="level2">
+<h2 class="anchored" data-anchor-id="question-3.a-comparaison-pertinence-des-estimations-selon-cas-index-inclus-ou-exclu">Question 3.a) Comparaison pertinence des estimations selon cas index inclus ou exclu</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb89"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb89-1"><a href="#cb89-1" aria-hidden="true" tabindex="-1"></a><span class="co">#estimations de theta si cas index est exclu</span></span>
+<span id="cb89-2"><a href="#cb89-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb89-3"><a href="#cb89-3" aria-hidden="true" tabindex="-1"></a>theta_estimations<span class="ot">=</span><span class="fu">numeric</span>(<span class="at">length=</span><span class="dv">500</span>)</span>
+<span id="cb89-4"><a href="#cb89-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb89-5"><a href="#cb89-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">500</span>){</span>
+<span id="cb89-6"><a href="#cb89-6" aria-hidden="true" tabindex="-1"></a>  famille<span class="ot">=</span>cohortes[[i]]</span>
+<span id="cb89-7"><a href="#cb89-7" aria-hidden="true" tabindex="-1"></a>  model<span class="ot">=</span><span class="fu">survreg</span>(<span class="fu">Surv</span>(age,statut)<span class="sc">~</span><span class="dv">1</span>, <span class="at">data=</span>famille[famille<span class="sc">$</span>index<span class="sc">==</span><span class="dv">0</span> <span class="sc">&amp;</span> famille<span class="sc">$</span>variant<span class="sc">==</span><span class="dv">1</span>,],<span class="at">dist=</span><span class="st">"exponential"</span>)</span>
+<span id="cb89-8"><a href="#cb89-8" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb89-9"><a href="#cb89-9" aria-hidden="true" tabindex="-1"></a>  alpha<span class="ot">=</span> <span class="sc">-</span>model<span class="sc">$</span>coefficients</span>
+<span id="cb89-10"><a href="#cb89-10" aria-hidden="true" tabindex="-1"></a>  theta_estimations[i]<span class="ot">=</span><span class="fu">exp</span>(alpha)</span>
+<span id="cb89-11"><a href="#cb89-11" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb89-12"><a href="#cb89-12" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(theta_estimations)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>    Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+0.006789 0.008210 0.008571 0.008634 0.009022 0.010839 </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb91"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb91-1"><a href="#cb91-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb91-2"><a href="#cb91-2" aria-hidden="true" tabindex="-1"></a><span class="co">#créer un dataframe ave les estimations de theta</span></span>
+<span id="cb91-3"><a href="#cb91-3" aria-hidden="true" tabindex="-1"></a>df<span class="ot">=</span><span class="fu">data.frame</span>(theta_estimations)</span>
+<span id="cb91-4"><a href="#cb91-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb91-5"><a href="#cb91-5" aria-hidden="true" tabindex="-1"></a><span class="co">#création du graph</span></span>
+<span id="cb91-6"><a href="#cb91-6" aria-hidden="true" tabindex="-1"></a>graph<span class="ot">=</span><span class="fu">ggplot</span>(df,</span>
+<span id="cb91-7"><a href="#cb91-7" aria-hidden="true" tabindex="-1"></a>             <span class="fu">aes</span>(<span class="at">x=</span><span class="st">""</span>,<span class="at">y=</span>theta_estimations))<span class="sc">+</span></span>
+<span id="cb91-8"><a href="#cb91-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">width=</span><span class="fl">0.5</span>, <span class="at">fill=</span><span class="st">"blue"</span>,<span class="at">color=</span><span class="st">"black"</span>,<span class="at">alpha=</span><span class="fl">0.7</span>)<span class="sc">+</span></span>
+<span id="cb91-9"><a href="#cb91-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept=</span>theta,<span class="at">linetype=</span><span class="st">"solid"</span>,<span class="at">color=</span><span class="st">"red"</span>,<span class="at">linewidth=</span><span class="dv">1</span>)<span class="sc">+</span></span>
+<span id="cb91-10"><a href="#cb91-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">y=</span><span class="fu">expression</span>(<span class="fu">hat</span>(theta)),</span>
+<span id="cb91-11"><a href="#cb91-11" aria-hidden="true" tabindex="-1"></a>       <span class="at">title=</span><span class="st">"Distribution des estimations de theta (cas index inclus)"</span>)<span class="sc">+</span></span>
+<span id="cb91-12"><a href="#cb91-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span>
+<span id="cb91-13"><a href="#cb91-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb91-14"><a href="#cb91-14" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(graph)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Projet2025_TL_SB_files/figure-html/unnamed-chunk-43-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Quand on exclu le cas index, on a une sous estimation de theta, contrairement à quand on l’inclus (surestimation de theta)</p>
+<p>On pourrait améliorer nos graphes en augmentant la taille de notre échantillon, (faire plus que 500).</p>
+</section>
+<section id="question-3.b-augmenter-nb-famille" class="level2">
+<h2 class="anchored" data-anchor-id="question-3.b-augmenter-nb-famille">Question 3.b) Augmenter nb famille</h2>
+<p>avec cas index exclu</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb92"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb92-1"><a href="#cb92-1" aria-hidden="true" tabindex="-1"></a>cohorte2<span class="ot">=</span><span class="fu">selection_famille</span>(<span class="dv">2000</span>)</span>
+<span id="cb92-2"><a href="#cb92-2" aria-hidden="true" tabindex="-1"></a>cohorte2<span class="ot">=</span><span class="fu">do.call</span>(rbind,cohorte2)</span>
+<span id="cb92-3"><a href="#cb92-3" aria-hidden="true" tabindex="-1"></a>cohorte2<span class="sc">$</span>famid<span class="ot">=</span><span class="fu">rep</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">500</span>,<span class="at">each=</span><span class="dv">5</span>)</span>
+<span id="cb92-4"><a href="#cb92-4" aria-hidden="true" tabindex="-1"></a>model1<span class="ot">=</span><span class="fu">survreg</span>(<span class="fu">Surv</span>(age,statut)<span class="sc">~</span><span class="dv">1</span>,<span class="at">data=</span>cohorte2[cohorte2<span class="sc">$</span>index<span class="sc">==</span><span class="dv">0</span> <span class="sc">&amp;</span> cohorte2<span class="sc">$</span>variant<span class="sc">==</span><span class="dv">1</span>,],<span class="at">dist=</span><span class="st">"exponential"</span>)</span>
+<span id="cb92-5"><a href="#cb92-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb92-6"><a href="#cb92-6" aria-hidden="true" tabindex="-1"></a>estimation_theta2<span class="ot">=</span><span class="fu">exp</span>( <span class="sc">-</span>model1<span class="sc">$</span>coefficients)</span>
+<span id="cb92-7"><a href="#cb92-7" aria-hidden="true" tabindex="-1"></a>estimation_theta2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>(Intercept) 
+ 0.00965675 </code></pre>
+</div>
+</div>
+<p>avec cas index inclus</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb94"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb94-1"><a href="#cb94-1" aria-hidden="true" tabindex="-1"></a>cohorte2<span class="ot">=</span><span class="fu">selection_famille</span>(<span class="dv">2000</span>)</span>
+<span id="cb94-2"><a href="#cb94-2" aria-hidden="true" tabindex="-1"></a>cohorte2<span class="ot">=</span><span class="fu">do.call</span>(rbind,cohorte2)</span>
+<span id="cb94-3"><a href="#cb94-3" aria-hidden="true" tabindex="-1"></a>cohorte2<span class="sc">$</span>famid<span class="ot">=</span><span class="fu">rep</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">500</span>,<span class="at">each=</span><span class="dv">5</span>)</span>
+<span id="cb94-4"><a href="#cb94-4" aria-hidden="true" tabindex="-1"></a>model1<span class="ot">=</span><span class="fu">survreg</span>(<span class="fu">Surv</span>(age,statut)<span class="sc">~</span><span class="dv">1</span>,<span class="at">data=</span>cohorte2[cohorte2<span class="sc">$</span>variant<span class="sc">==</span><span class="dv">1</span>,],<span class="at">dist=</span><span class="st">"exponential"</span>)</span>
+<span id="cb94-5"><a href="#cb94-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb94-6"><a href="#cb94-6" aria-hidden="true" tabindex="-1"></a>estimation_theta2<span class="ot">=</span><span class="fu">exp</span>( <span class="sc">-</span>model1<span class="sc">$</span>coefficients)</span>
+<span id="cb94-7"><a href="#cb94-7" aria-hidden="true" tabindex="-1"></a>estimation_theta2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>(Intercept) 
+ 0.01387358 </code></pre>
+</div>
+</div>
+<p>On peut voir qu’on a une amélioration des estimations quand on augmente la taille de la famille (ici on a pris 2000 familles).</p>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
